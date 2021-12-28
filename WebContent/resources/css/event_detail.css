@@ -1,0 +1,180 @@
+/* thiri */
+
+
+@CHARSET "ISO-8859-1";
+
+.col-lg-12 {
+	padding: 0;
+}
+
+@media screen {
+	.background_div {
+		min-width: 1000px;
+	}
+	
+	.event_detail_white_box {
+		min-width: 100%;
+	}
+	
+	.header {
+		min-width: 1000px;
+	}
+	
+	html {
+		min-width: 1000px;
+	}
+	
+
+.background_div {
+	min-height: 1300px;
+	width: 100%;
+	background-image: url("../images/events_footer_bg.png");
+	background-position: right 0 bottom 0;
+	background-size: contain;
+	background-repeat: no-repeat;	
+	position: relative;
+	background-color: transparent;
+	padding-bottom: 200px;
+	
+}
+
+.title_bar {
+	width: 100%;
+	background-color: #59c6ad;
+	height: 50px;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.event_detail_white_box .detail_body {
+	background-color: rgba(255,255,255,0.8);;
+	width: 100%;
+	height: 800px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+.event_detail_white_box .detail_body .titles_inputs {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 20px;	
+	margin-left: 0%;
+	margin-right: 0%;
+	background-color: transparent;
+	border: none;
+}
+
+.event_detail_white_box .detail_body .titles_inputs .titles {
+	width: 200px;
+	height: 30px;
+	font-family: ChalkboardSE-Bold;
+	font-size: 14px;
+	border-color: transparent;
+	padding: 0px 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+}
+
+.event_detail_white_box .detail_body .titles_inputs .input_div {
+	float: left;
+	width: 100%;
+	height: 40px;
+	border-color: #DCDCDC;
+	background-color: transparent;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+}
+
+.event_detail_white_box .detail_body .titles_inputs .input_div .inputs {
+	font-family: ChalkboardSE-Bold;
+	width: 100%;
+	height: 40px;
+	float: left;
+    padding: 6px;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 0px;
+    font-size: 12px;    
+    box-shadow: none;
+}
+
+.event_detail_white_box .detail_body .buttons_container {
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	margin-top: 30px;
+}
+
+.event_detail_white_box .detail_body .buttons_container .event_detail_buttons {
+	height: 40px;
+	width: 120px;
+	background-color: #59c6ad;
+	border: none;
+	float: right;
+	margin-left: 15px;
+	font-size: 16px;
+}
+
+.event_detail_white_box .detail_body .buttons_container .event_detail_buttons:DISABLED {
+	color: gray;
+	background-color: #beeae0;
+}
+
+.invitation_box {
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+	padding: 10px;
+	padding-right: 0;
+}
+
+.inviter_box {
+	height: 50px;
+}
+
+.title_bar .title_name {
+	height: 40px;
+	margin: 5px;
+	float: left;
+}
+
+.event_detail_white_box {
+	max-height: 1000px;
+	width: 100%;
+/* 	left: 15%;
+	right: 15%; */
+	
+	/* margin-left: 15%;
+	margin-right: 15%; */
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0px 5px 15px 5px #d0c8bc;
+	font-family: ChalkboardSE-Bold;
+}
+
+.invitee_list {
+	width: 100%;
+	min-height: 50px;
+	padding: 0;
+	padding-right: 3px;
+	overflow: hidden;
+}
+
+.invitees {
+	height: 40px;
+	width: 24.3%;
+	margin-right: 5px;
+	background-color: #beeae0;
+	float: left;
+	margin-bottom: 5px;
+	
+}
+
+#inviter_name {
+	font-size: 12px;
+}
+
+

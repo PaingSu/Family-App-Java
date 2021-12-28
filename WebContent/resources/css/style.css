@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'ChalkboardSE-Bold';
+    src: url(../fonts/ChalkboardSE-Bold.ttf);
+    font-weight: bold;
+}
+div{
+	font-family: 'ChalkboardSE-Bold';
+}
+@font-face {
+    font-family: 'ChalkboardSE-Regular';
+    src: url(../fonts/ChalkboardSE-Regular.ttf);
+}
+p, a{
+	font-family: 'ChalkboardSE-Regular';
+}
+body {
+    background-image: url('../images/center-bg.png');
+    background-color: #fef5e6 !important;
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+.header_img{
+	width: 100%;
+	background-size:100% auto;
+}
+.header_bar img {
+	max-width: 100%;
+    height: auto;
+}
+.center_box{
+	width:100%;
+	height:auto;
+	padding: 30px;
+	background: #beeae0;
+	text-align: center;
+	border: 10px solid #fff;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.second_title {
+	margin-top:0px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'ChalkboardSE-Bold';
+	text-transform: uppercase;
+}
+.center_box img{
+	width: 15%;
+	margin: 20px;
+}
+.back_to_home{
+	padding-top: 25px;
+	text-decoration: underline;
+	text-decoration-color: #000;
+	color:#000;
+	font-size: 13px;
+}
+a:hover, a:focus {
+    color: #59c6ad !important;
+    text-decoration: underline;
+
+}
+.text{
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+
+.title{
+  font-size: 3.5em;
+  margin: 0;
+  -webkit-text-stroke: 2px #59c6ad;
+  font-weight: bold;
+}
+.blankspace{
+	height:30px;
+}
+
+@@media only screen and (min-width: 1600px) {
+  .footer_img {
+   position:fixed;
+   bottom:0;
+   width:100%;
+  }
+  img .img{
+  	width: 10%;
+   }
+}
+@media only screen and (min-width: 768px)and (max-width:420px){
+  .footer_img {
+	   position:absolute;
+	   bottom:0;
+	   width:100%;
+	}
+  .second_title {
+    	font-size: 15px;
+	}
+	.text {
+    	font-size: 10px;
+	}
+	.center_box {
+    	width: 53%;
+    	margin: 0px auto;
+    }
+	.back_to_home {
+		font-size: 10px;
+	}
+	.center_box img {
+    	width: 25%; 	 
+	}
+}
+@media only screen and (min-width: 319px) {
+	.center_box {
+		width: 70%;
+		margin: 0px auto;
+    }
+	.footer_img {
+	   position:absolute;
+	   bottom:0;
+	   width:100%;
+	}
+}
+
+
+
+
+

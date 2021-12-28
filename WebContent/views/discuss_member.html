@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Discuss Member</title>
+
+<link href="../resources/css/bootstrap-theme.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap-theme.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.min.css" type="text/css"
+	rel="stylesheet">
+
+<link href="../resources/css/headerwithbutton.css" type="text/css"
+	rel="stylesheet">
+
+<link href="../resources/css/common_discussion.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/discuss_member.css" type="text/css"
+	rel="stylesheet">
+
+<script type="text/javascript" src="../resources/js/common_functions.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="pageHeader">
+			<div class="col-xs-2 col-sm-2  col-md-2  col-lg-2 col-lg-offset-1"
+				id="logo"></div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="header_buttons">
+				<button class="header_btn" id="header_logout" onclick="logoutbtn()">
+					<img alt="" src="../resources/icons/logout_icon.png" width="35px;"
+						style="transform: scaleX(-1);"> LOGOUT
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/groupchat_icon.png"
+						width="45px;" height="30px"> GROUP CHAT
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/dashboard_calendar_icon.png"
+						width="35px;"> CALENDAR AND SCHEDULE
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/noti_icon.png" width="40px;">
+					NOTIFICATION
+				</button>
+				<button class="header_btn header_btndiscussion" id="header_discuss"
+					onclick="discussionbtn()">
+					<img alt="" src="../resources/icons/discussion_icon.png"
+						width="45px;"> DISCUSSION
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/checklist_icon.png"
+						width="45px;"> CHECK LIST
+				</button>
+				<button class="header_btn" id="header_familyprofile">
+					<img alt="" src="../resources/icons/family_profile_icon.png"
+						width="40px;"> FAMILY PROFILE
+				</button>
+			</div>
+			<div class="col-xs-1 col-sm-1  col-md-1  col-lg-1"
+				style="margin: 0; padding: 0;">
+				<div class="profile_pic_name">
+					<button class="profile_button" id="header_profile"
+						onclick="profilebtn()">
+						<img id="profile_pic" alt=""
+							src="../resources/images/image_boy_profile.png" width="100%"
+							height="70%">
+						<div id="profile_name"
+							style="font-size: 12px; font-family: ChalkboardSE; color: #000000; padding-top: 3px;">PROFILE</div>
+					</button>
+				</div>
+				<div class="arrowhead_border"></div>
+			</div>
+			<div class="titlelogo">
+				<div class="titlelogotext"
+					style="width: 180px; height: 25px; text-align: center; margin-left: 10px; top: 20px; position: relative; font-size: 20px; font-family: ChalkboardSE; color: #000000; z-index: 3">
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="pagefooterwithdiscuss_memberBox">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 "
+				id="white-box-discussmember">
+				<div class="admindiscussionTopic">
+					<div class="adminTopic">
+						<div class="discussAdminInfo" style="float: left;">
+							<div class="discussAdminphoto">
+								<img class="img-circle" id="discussAdminphoto_image">
+							</div>
+							<div class="discussAdminRole">
+								<div class="discussAdminName">
+									<font>ALIE</font>
+								</div>
+							</div>
+						</div>
+						<div class="topicTitle">
+							<font>ABOUT HEALTH</font>
+
+						</div>
+					</div>
+					<div class="adminTopicText">LOREM IPSUM IS NOT SIMPLY RANDOM
+						TEXT. IT HAS ROOTS IN A PIECE OF CLASSICAL LATIN LITERATURE FROM
+						45 BC, MAKING IT OVER 2000 YEARS OLD. RICHARD MCCLINTOCK, A LATIN
+						PROFESSOR AT HAMPDEN-SYDNEY COLLEGE IN VIRGINIA.</div>
+					<div class="adminTopicTime">LAST UPDATED BY OCTOBER 14 AT
+						10:00 AM</div>
+				</div>
+
+
+				<div class="rightDIV">
+					<div class="memberDIV">
+						<div class="memberTopic">
+							<font>MEMBER</font>
+						</div>
+						<div class="row" id="searchpanel">
+							<div class="groupforsearch">
+								<div class="placeholder">
+									<input type="text" class="searchformember" id="searchformember"
+										placeholder="SEARCH">
+
+									<button type="button" id="searchbtn" class="searchbtn"></button>
+									<button type="button" id="clearsearchbtn"
+										class="clearsearchbtn" onclick="clearsearchtext()"></button>
+								</div>
+							</div>
+						</div>
+						<div class="memberList">
+							<div class="memberInfo">
+								<div class="memberInfoCenter">
+									<div class="memberphoto" style="float: left">
+										<img class="img-circle" id="memberphoto_image"
+											style="background-image: url(../resources/icons/user_profile_icon_2.png);">
+									</div>
+
+									<div class="memberRole" style="float: left">
+										<div class="memberName">
+											<font>MARRY</font>
+										</div>
+										<div class="memberrelationName">SISTER</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="memberInfo">
+								<div class="memberInfoCenter">
+									<div class="memberphoto" style="float: left">
+										<img class="img-circle" id="memberphoto_image"
+											style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+									</div>
+
+									<div class="memberRole" style="float: left">
+										<div class="memberName">
+											<font>HARRY</font>
+										</div>
+										<div class="memberrelationName">BROTHER</div>
+									</div>
+								</div>
+							</div>
+							<div class="memberInfo">
+								<div class="memberInfoCenter">
+									<div class="memberphoto" style="float: left">
+										<img class="img-circle" id="memberphoto_image"
+											style="background-image: url(../resources/icons/user_profile_icon_2.png);">
+									</div>
+
+									<div class="memberRole" style="float: left">
+										<div class="memberName">
+											<font>JENNY</font>
+										</div>
+										<div class="memberrelationName">SISTER</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="memberInfo">
+								<div class="memberInfoCenter">
+									<div class="memberphoto" style="float: left">
+										<img class="img-circle" id="memberphoto_image"
+											style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+									</div>
+
+									<div class="memberRole" style="float: left">
+										<div class="memberName">
+											<font>TOM</font>
+										</div>
+										<div class="memberrelationName">BROTHER</div>
+									</div>
+								</div>
+							</div>
+							<div class="memberInfo">
+								<div class="memberInfoCenter">
+									<div class="memberphoto" style="float: left">
+										<img class="img-circle" id="memberphoto_image"
+											style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+									</div>
+
+									<div class="memberRole" style="float: left">
+										<div class="memberName">
+											<font>JOHN</font>
+										</div>
+										<div class="memberrelationName">FATHER</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="memberInfo">
+								<div class="memberInfoCenter">
+									<div class="memberphoto" style="float: left">
+										<img class="img-circle" id="memberphoto_image"
+											style="background-image: url(../resources/icons/user_profile_icon_2.png);">
+									</div>
+
+									<div class="memberRole" style="float: left">
+										<div class="memberName">
+											<font>CHRISTINE</font>
+										</div>
+										<div class="memberrelationName">MOTHER</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="seeallLink">
+							<a href="" class="seeall">SEE ALL</a>
+						</div>
+					</div>
+
+
+
+					<div class="topicDIV">
+						<div class="relatedTopic">
+							<font>LATEST TOPIC</font>
+						</div>
+						<div class="relatedTopicList">
+							<div class="relatedTopicDetail" style="float: left;">
+								<div class="relatedTopicTitle">
+									<font>ABOUT FAMILY PARTY</font>
+								</div>
+								<div class="relatedTopicText">
+									LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY. LOREM IPSUM HAS SEEN THE INDUSTRY'S STANDARD.
+								</div>
+								<div class="relatedTopicAdmin" >
+									ADMIN BY JOHN
+								</div>
+							</div>
+							<div class="relatedTopicDetail" style="float: left;">
+								<div class="relatedTopicTitle">
+									<font>TRAVELLING</font>
+								</div>
+								<div class="relatedTopicText">
+									LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY. LOREM IPSUM HAS SEEN THE INDUSTRY'S STANDARD.
+								</div>
+								<div class="relatedTopicAdmin" >
+									ADMIN BY ME
+								</div>
+							</div>
+						
+					
+					</div>
+						<div class="seeallLink">
+							<a href="" class="seeall">SEE ALL</a>
+						</div>
+					</div>
+				</div>
+
+				
+				
+				<div class="discuss">
+					<div class="discussionMessage">
+						<div class="discussMemberInfo" style="float: left;">
+							<div class="discussmemberphoto" >
+								<img class="img-circle" id="discussmemberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+							</div>
+							<div class="discussmemberRole" >
+								<div class="discussmemberName">
+									<font>JOHN</font>
+								</div>
+								<div class="discussmemberrelationName">
+									FATHER
+								</div>
+							</div>
+						</div>
+						<div class="discussmemberwhiteBox" style="float: right;">
+							<div class="discussmembertime">
+								<img class="timeicon" style="float: left;">
+								<div class="timetext" style="float: right;">
+									OCT 14 2017 AT 11:05 AM
+								</div>
+							</div>
+							<div class="discussmemberTextMessage">
+								THE STANDARD CHUNK OF LOREM IPSUM USED SINCE THE 1500s IS REPRODUCED BELOW FOR THOSE INTERESTED.
+							</div> 
+						</div>
+					
+						<div class="discussMemberInfo" style="float: left;">
+							<div class="discussmemberphoto" >
+								<img class="img-circle" id="discussmemberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_1.png);">
+							</div>
+							<div class="discussmemberRole" >
+								<div class="discussmemberName">
+									<font>JUSTIN</font>
+								</div>
+								<div class="discussmemberrelationName">
+									BROTHER
+								</div>
+							</div>
+						</div>
+						<div class="discussmemberwhiteBox" style="float: right;">
+							<div class="discussmembertime">
+								<img class="timeicon" style="float: left;">
+								<div class="timetext" style="float: right;">
+									OCT 14 2017 AT 8:02 PM
+								</div>
+							</div>
+							<div class="discussmemberTextMessage">
+								THE STANDARD CHUNK OF LOREM IPSUM USED SINCE THE 1500s IS REPRODUCED BELOW FOR THOSE.
+							</div> 
+						</div>
+					
+						<div class="discussMemberInfo" style="float: left;">
+							<div class="discussmemberphoto" >
+								<img class="img-circle" id="discussmemberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_2.png);">
+							</div>
+							<div class="discussmemberRole" >
+								<div class="discussmemberName">
+									<font>CHRISTINE</font>
+								</div>
+								<div class="discussmemberrelationName">
+									MOTHER
+								</div>
+								</div>
+						</div>
+						<div class="discussmemberwhiteBox" style="float: right;">
+							<div class="discussmembertime">
+								<img class="timeicon" style="float: left;">
+								<div class="timetext" style="float: right;">
+									OCT 14 2017 AT 8:05 PM
+								</div>
+							</div>
+							<div class="discussmemberTextMessage">
+								YES!THAT RIGHT.
+							</div> 
+						</div>
+					
+					
+						<div class="discussMemberInfo" style="float: left;">
+							<div class="discussmemberphoto" >
+								<img class="img-circle" id="discussmemberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+							</div>
+							<div class="discussmemberRole" >
+								<div class="discussmemberName">
+									<font>TOM</font>
+								</div>
+								<div class="discussmemberrelationName">
+									BROTHER
+								</div>
+							</div>
+						</div>
+						<div class="discussmemberwhiteBox" style="float: right;">
+							<div class="discussmembertime">
+								<img class="timeicon" style="float: left;">
+								<div class="timetext" style="float: right;">
+									OCT 14 2017 AT 10:02 PM
+								</div>
+							</div>
+							<div class="discussmemberTextMessage">
+								I THINK ALSO.THIS IS A GOOD ADVICE. WE ALL ARE GRATE.
+							</div> 
+						</div>
+						
+					
+					</div>
+					<div class="discussionBox">
+						<div class="discussionBoxInfo" style="float: left;">
+							<div class="discussionBoxphoto" >
+								<img class="img-circle" id="discussionBoxphoto_image">
+							</div>							
+						</div>
+						<div class="discussionBoxWithButton" style="float: right;">
+							<div class="placeholder"><input type="text" class="textmessage" id="textmessage" name="textmessage" placeholder="TYPE SOMETHING"></div>
+							<button type="button" class="sendtextmessage" id="sendtextmessage"><font>SEND</font></button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

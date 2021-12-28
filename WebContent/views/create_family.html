@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Family</title>
+
+<link href="../resources/css/bootstrap-theme.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap-theme.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.min.css" type="text/css"
+	rel="stylesheet">
+
+<link href="../resources/css/headerwithbutton.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/join_family.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/create_family.css" type="text/css"
+	rel="stylesheet">	
+
+<script type="text/javascript" src="../resources/js/common_functions.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="pageHeader">
+			<div class="col-xs-2 col-sm-2  col-md-2  col-lg-2 col-lg-offset-1"
+				id="logo"></div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="header_buttons">
+				<button class="header_btn" id="header_logout" onclick="logoutbtn()">
+					<img alt="" src="../resources/icons/logout_icon.png" width="35px;"
+						style="transform: scaleX(-1);"> LOGOUT
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/groupchat_icon.png" width="45px;"
+						height="30px"> GROUP CHAT
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/dashboard_calendar_icon.png"
+						width="35px;"> CALENDAR AND SCHEDULE
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/noti_icon.png" width="40px;">
+					NOTIFICATION
+				</button>
+				<button class="header_btn" id="header_discuss"
+					onclick="discussionbtn()">
+					<img alt="" src="../resources/icons/discussion_icon.png" width="45px;">
+					DISCUSSION
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/checklist_icon.png" width="45px;">
+					CHECK LIST
+				</button>
+				<button class="header_btn header_btnfp" id="header_familyprofile">
+					<img alt="" src="../resources/icons/family_profile_icon.png" width="40px;">
+					FAMILY PROFILE
+				</button>
+			</div>
+			<div class="col-xs-1 col-sm-1  col-md-1  col-lg-1"
+				style="margin: 0; padding: 0;">
+				<div class="profile_pic_name">
+					<button class="profile_button" id="header_profile"
+						onclick="profilebtn()">
+						<img id="profile_pic" alt="" src="../resources/images/image_boy_profile.png"
+							width="100%" height="70%">
+						<div id="profile_name"
+							style="font-size: 12px; font-family: ChalkboardSE; color: #000000; padding-top: 3px;">PROFILE</div>
+					</button>
+				</div>
+				<div class="arrowhead_border"></div>
+			</div>
+			<div class="titlelogo" ><div class="titlelogotext" style=" width: 180px; height:25px; text-align: center; margin-left: 10px; top: 20px;position: relative;font-size: 20px; font-family: ChalkboardSE; color: #000000; z-index: 3">FAMILY PROFILE</div></div>
+		</div>
+
+		<div class="row" id="pagefooterwithCreate_familyBox">
+			
+			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="createfamilyInfo">
+				<div class="createfamilyInfo_center">
+					<form class="form-horizontal" action="/" onsubmit="familymemberPage()">
+						<div class="familyphoto">
+							<img class="img-circle" id="familyphoto_image">
+							
+							<input type="file" id="fileLoaderfamilyphoto" name="files"  title="Load File" style="display: none"/>
+							
+							<button class="camera_input"  onclick="openFamilyPhotoFile()"></button>
+						</div>
+						<font>FAMILY ID</font>
+						<div class="placeholder"><input type="text" id="createfamilyId" name="cfid" placeholder="WHITE FAMILY ID" readonly="readonly"></div>
+						<font>FAMILY NAME</font>
+						<div class="placeholder"><input type="text" id="createfamilyName" name="cfname" placeholder="WHITE FAMILY NAME" required></div>
+						<font>DESCRIPTION</font>
+						<div class="placeholder"><input type="text" id="description" name="description" placeholder="WHITE DESCRIPTION" required></div>
+				
+						
+						<div class="date_container">
+							<font>FAMILY START DATE</font>
+							<div class="placeholder"><input class="start_date" type="date" id="selected_date" value="2018-05-05"></div>
+      						<button class="open-button" type="button" ></button>
+    					</div>
+    					
+    					
+					</form>
+					<div class="titlememberList">
+						<div class="titlememberListCenter">
+							<font>INVITE FAMILY MEMBER</font>
+						</div>					
+					</div>
+					
+					<div class="memberAddPanel" id="memberAddPanel">
+						<div class="memberInfo">
+							<div class="memberInfoCenter">
+								
+								<div class="emailaddress" style="float: left">
+									<input type="email" placeholder="EXAMPLE1@GMAIL.COM"/>
+								</div>
+						
+								<div class="Cancel" style="float: left;">
+									<button type="button" class="cancelmember"></button>
+								</div>
+							</div>					
+						</div>
+				
+						<div class="memberInfo">
+							<div class="memberInfoCenter">
+								
+								<div class="emailaddress" style="float: left">
+									<input type="email" placeholder="EXAMPLE2@GMAIL.COM"/>
+								</div>
+						
+								<div class="Cancel" style="float: left;">
+									<button type="button" class="cancelmember"></button>
+								</div>
+							</div>					
+						</div>
+						<div class="memberInfo">
+							<div class="memberInfoCenter">
+								
+								<div class="emailaddress" style="float: left">
+									<input type="email" placeholder="EXAMPLE3@GMAIL.COM" />
+								</div>
+						
+								<div class="Cancel" style="float: left;">
+									<button type="button" class="cancelmember"></button>
+								</div>
+							</div>					
+						</div>
+	
+						
+					</div>
+					<div class="Invitemember">
+						<div class="memberInfoCenter">
+								
+							<div class="emailaddress" style="float: left">
+								<input type="email" placeholder="ADD NEW MAIL" id="txt_invitemember"/>
+							</div>
+						
+							<div class="Cancel" style="float: left;">
+								<button type="button" class="addmember" id="addmember"></button>
+							</div>
+						</div>					
+					</div>
+					<br/><br/><br/><br/>
+					<div class="savecancel">
+						
+						<button type="button" id="saveaddmemberBtn" style="float: right; margin-top: 1%; border: none; margin-left: 15px;"><font>CREATE</font></button>
+						<button type="button" id="canceladdmemberBtnadd" style="float: right; margin-top: 1%; border:none; "><font>CANCEL</font></button>
+					</div>
+					
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script>
+		 function openFamilyPhotoFile(){
+			document.getElementById('fileLoaderfamilyphoto').click(function () {
+				$('document').ready(function () {
+				    $("#fileLoaderfamilyphoto").change(function () {
+				        if (this.files && this.files[0]) {
+				            var reader = new FileReader();
+				            reader.onload = function (e) {
+				                $('#familyphoto_image').attr('src', e.target.result);
+				            }
+				            reader.readAsDataURL(this.files[0]);
+				        }
+				    });
+				    });
+	        });
+		} 
+		$('document').ready(function () {
+		    $("#fileLoaderfamilyphoto").change(function () {
+		        if (this.files && this.files[0]) {
+		            var reader = new FileReader();
+		            reader.onload = function (e) {
+		                $('#familyphoto_image').attr('src', e.target.result);
+		            }
+		            reader.readAsDataURL(this.files[0]);
+		        }
+		    });
+		    }); 
+
+		
+		$(function(){
+			  var count = 0;
+			  $('#addmember').click(function(){
+				  var data= $('#txt_invitemember').val();
+				  $('<div class="memberInfo"><div class="memberInfoCenter"><div class="emailaddress" style="float: left"><input type="email" id="first'+count+'"/></div><div class="Cancel" style="float: left;"><button type="button" class="cancelmember"></button></div></div></div>').appendTo('.memberAddPanel');   
+				  $('#first'+count+'').val(data); 
+			      count++;
+			      $('#txt_invitemember').val("");
+
+			      $(".cancelmember").click(function(){
+					  $(this).closest(".memberInfo").remove();
+				  });
+			  });
+			  
+
+			  
+			});
+		
+
+		$(function(){
+			  $(".cancelmember").click(function(){
+				  $(this).closest(".memberInfo").remove();
+			  });
+
+			});
+		
+		
+	</script>
+	
+
+
+</body>
+</html>

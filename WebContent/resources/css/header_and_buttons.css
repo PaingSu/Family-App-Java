@@ -1,0 +1,127 @@
+@CHARSET "ISO-8859-1";
+
+/* thiri
+
+@media screen {
+	.header_buttons {
+		max-width: 60%;
+	}
+}
+
+/* .col-centered{
+    float: none;
+    margin: 0 auto;
+} */
+@font-face { font-family: ChalkboardSE-Bold; src: url('../fonts/ChalkboardSE-Bold.ttf') format('TrueType'); } 
+
+.title {
+	
+	font-family: ChalkboardSE-Bold;
+	background-image: url("../icons/title_bg_large.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.custom {
+	height: 100%; 
+	float: right; 
+	padding: 0; 
+	margin: 0;
+}
+
+
+
+.header {
+	width: 100%;
+	height: 280px;
+	background-size: 100% 100%;
+	background-image: url("../images/header_bar_bg.png");
+	background-repeat: no-repeat;
+	position: relative;
+	box-shadow: none;
+	font-family: ChalkboardSE-Bold;
+	background-color: transparent;
+}
+
+.header .profile_container {
+	width: 70px;
+	height: 130px;
+	background-color: transparent;
+	border: none;
+	float: none;
+	margin: 0 auto;
+}
+
+.header .profile_container .arrowhead_border {
+	width: 0; 
+  	height: 0; 
+  	border-left: 35px solid transparent;
+  	border-right: 35px solid transparent;
+  
+  	border-top: 20px solid #59c6ad;
+}
+
+.header .profile_container .profile_pic_name {
+	width: 100%;
+	height: 110px;
+	background-color: #59c6ad;
+	margin: 0;
+}
+
+.header .profile_container .profile_pic_name .profile_button {
+	padding: 9px; 
+	width: 100%; 
+	height: 90px; 
+	background-color: transparent;
+	margin-top: 25px;
+	border: none;
+}
+
+.header .header_buttons {
+	height: 100%;
+	width: 100%;
+	padding-right: 25px;
+	float: right;	
+}
+
+.header .header_buttons .header_btn {
+	height: 90px;
+	width: 95px;
+	border: none;
+	box-shadow: 1px 1px 20px 8px rgba(128, 128, 128, 0.3);
+	float: right;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.header .header_buttons .header_btn:HOVER {
+	background-color: #59c6ad;
+}
+
+.header .header_buttons .header_btn:ACTIVE {
+	background-color: #59c6ad;
+}
+
+.header .header_buttons .header_btn:FOCUS {
+	background-color: #59c6ad;
+}
+
+.header .app_logo {
+	background-image: url("../images/logo.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 80px;
+	width: 250px;
+	/* left: 100px; */
+	margin-top: 50px;
+	float: right;
+	/* position: absolute; */
+	background-color: transparent;
+	border: none;
+}
+

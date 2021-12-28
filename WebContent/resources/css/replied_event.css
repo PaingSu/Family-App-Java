@@ -1,0 +1,190 @@
+/* thiri */
+
+
+@CHARSET "ISO-8859-1";
+
+.col-lg-12 {
+	padding: 0;
+}
+
+@media screen {
+	.background_div {
+		min-width: 1000px;
+	}
+	
+	.header {
+		min-width: 1000px;
+	}
+	
+	/* .inbox_white_box {
+		min-width: 600px;
+	} */
+	
+	html {
+		min-width: 1000px;
+	}
+	
+}
+
+.background_div {
+	min-height: 1000px;
+	width: 100%;
+	background-image: url("../images/events_footer_bg.png");
+	background-position: right 0 bottom 0;
+	background-size: contain;
+	background-repeat: no-repeat;	
+	position: relative;
+	background-color: transparent;
+	padding-bottom: 200px;
+	
+}
+
+
+.inbox_white_box .inbox_header {
+	width: 100%;
+	background-color: #59c6ad;
+	height: 50px;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.inbox_body {
+	height: 550px;
+	padding-bottom: 100px;
+	background-image: url("../images/calendar_content_bg.png"), url("../images/calendar_content_bar_bg.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left 0 bottom 0, right 0 bottom 0;
+	overflow: auto;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.inbox_white_box .events_body {
+	background-color: white;
+	width: 100%;
+	min-height: 200px;
+	padding-left: 20px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+}
+
+.inbox_white_box .events_body .profile_container {
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	float: left;
+}
+
+.inbox_white_box .events_body .profile_container .profile_image {
+	height: 50px;
+	width: 50px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("../icons/user_circle_icon.png");
+	background-position: center;
+}
+
+.inbox_white_box .events_body .event_detail_container {
+	height: 100%;
+	float: left;
+	padding: 5px;
+}
+
+.inbox_white_box .events_body .event_detail_container .details {
+	font-size: 14px;
+	min-height: 100px;
+}
+
+.inbox_white_box .events_body .event_detail_container .buttons_container {
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	margin-top: 10px;
+}
+
+.inbox_white_box .events_body .event_detail_container .buttons_container .buttons {
+	width: 100px;
+	height: 40px;
+	margin-top: 5px;
+	margin-right: 20px;
+	background-color: #59c6ad;
+	color: #7f7a73( #000000Opacity 50%);
+	font-size: 16px;
+	border: none;
+	box-shadow: 0px 2px 2px 1px #DCDCDC;
+	text-align: center;
+}
+
+.inbox_white_box .events_body .event_detail_container .buttons_container .buttons:DISABLED {
+	background-color: #beeae0!important ;
+	color: gray;
+}
+
+.inbox_white_box {
+	background-color: #beeae0;
+	position: relative;
+	margin-left: 50%;
+	transform: translate(-50%);
+	width: 950px;
+	height: 670px;
+	box-shadow: 0px 5px 15px 5px #d0c8bc;
+	background-size: 100% 100%;	
+	font-family: ChalkboardSE-Bold;
+}
+
+.btn_bar {
+	height: 70px;
+	width: 100%;
+	background-image: url("../images/calendar_block_bg.png");
+	background-repeat: no-repeat;
+	background-position: right 0 bottom 0;
+	background-size: 100% 20px;
+}
+
+.btn_bar table {
+	width: 100%;
+	height: 50px;
+}
+.btn_bar table td {
+	width: 33.33%;
+}
+
+.btn_bar table td:HOVER {
+	background-color: #59c6ad;
+}
+
+.btn_bar table td:NOT(:LAST-CHILD) {
+	border-right: 2px solid #59c6ad ;
+}
+
+.btn_bar button {
+	border: none;
+	background-color: transparent;
+	height: 100%;
+	width: 100%;
+	
+}
+
+.show_more {
+	height: 100%;
+	width: 30px;
+	text-align: center;
+	float: right;
+	min-height: 160px;
+	position: relative;
+}
+
+.show_more .show_more_button {
+	background-image: url("../icons/forward_icon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 30px;
+	width: 30px;
+	background-color: transparent;
+	border: none;
+	top: 40%;
+	position: absolute;
+}

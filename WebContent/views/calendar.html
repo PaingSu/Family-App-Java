@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="../resources/css/bootstrap-theme.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap-theme.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/main.css" type="text/css" rel="stylesheet">
+<link href="../resources/css/calendar.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/header_and_buttons.css" type="text/css"
+	rel="stylesheet">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div class="header">
+		<div class="container" style="width: 100%;">
+			<div class="row">
+				<div class="col-lg-3 col-sm-4 col-md-3 col-xs-4"
+					style="height: 280px; margin: 0; padding: 0;">
+					<button class="app_logo"></button>
+				</div>
+				<div class="col-lg-8 col-sm-7 col-md-8 col-xs-6">
+					<div class="row" style="height: 140px;">
+						<div class="header_buttons">
+							<button id="logout" class="header_btn" id="header_logout">
+								<img alt="" src="../resources/icons/logout_icon.png"
+									width="35px;" style="transform: scaleX(-1);"> LOGOUT
+							</button>
+							<button id="chat" class="header_btn">
+								<img alt="" src="../resources/icons/groupchat_icon.png"
+									width="45px;" height="30px"> GROUP CHAT
+							</button>
+							<button id="calendar" class="header_btn">
+								<img alt="" src="../resources/icons/dashboard_calendar_icon.png"
+									width="35px;"> CALENDAR AND SCHEDULE
+							</button>
+							<button id="notification" class="header_btn">
+								<img alt="" src="../resources/icons/noti_icon.png" width="40px;">
+								NOTIFICATION
+							</button>
+							<button id="discussion" class="header_btn" id="header_discuss">
+								<img alt="" src="../resources/icons/discussion_icon.png"
+									width="45px;"> DISCUSSION
+							</button>
+							<button id="checklistpage" class="header_btn">
+								<img alt="" src="../resources/icons/checklist_icon.png"
+									width="45px;"> CHECK LIST
+							</button>
+							<button id="family_profile" class="header_btn" id="header_familyprofile">
+								<img alt="" src="../resources/icons/family_profile_icon.png"
+									width="40px;"> FAMILY PROFILE
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-1 col-sm-1 col-md-1 col-xs-2"
+					style="/* height: 280px; */ padding: 0; margin: 0;">
+					<div class="profile_container">
+						<div class="profile_pic_name">
+							<button id="profile" class="profile_button">
+								<img id="profile_pic" alt=""
+									src="../resources/images/image_boy_profile.png" width="100%"
+									height="70%">
+								<div id="profile_name"
+									style="font-size: 12px; padding-top: 3px;">PROFILE</div>
+							</button>
+						</div>
+						<div class="arrowhead_border"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="background_div">
+		<div class="container">
+			<div class="row" style="text-align: center; margin-top: -40px;">
+				<div class="title">CALENDAR</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="calendar_white_box">
+						<div class="calendar_top">
+							<button class="prev_and_next" style="transform: scaleX(-1);"></button>
+							<button class="month_button">
+								<b>MARCH 27</b>
+							</button>
+							<button class="prev_and_next"></button>
+							<div class="search_bar">
+								<button class="search_icon"></button>
+								<input class="search" type="text" placeholder="SEARCH">
+							</div>
+							<button hidden id="search_event" class="search_addEvent"
+								style="background-image: url(../resources/icons/calendar_search_icon.png);"></button>
+							<button id="add_event" class="search_addEvent"
+								style="background-image: url(../resources/icons/calender_plus_icon.png);"></button>
+							<button id="grid_view" class="search_addEvent"
+								style="background-image: url(../resources/icons/grid_icon.png);"></button>
+							<button id="list_view" class="search_addEvent"
+								style="background-image: url(../resources/icons/list_icon.png);"></button>
+						</div>
+
+						<div hidden
+							style="height: 700px; background-color: rgba(0, 0, 0, 0.2); z-index: 2;">
+							<div class="search_detail">
+								<div style="width: 100%; text-align: center;">
+									<div class="search_events">
+										<div class="date">FRIDAY MARCH 20, 2017</div>
+										<img alt="" src="../resources/icons/speaker_icon.png"
+											width="50px" style="float: left;">
+										<div style="float: left; text-align: left;">
+											<div style="font-size: 16px; padding: 5px;">LUNCH TIME</div>
+											<div style="font-size: 12px; padding: 5px;">CAN WE MEET
+												IN THE RESTAURANT AT MYANMAR PALAZA?</div>
+										</div>
+										<div style="float: right; text-align: right;">
+											<div class="time">11:00 AM</div>
+											<div class="location">RESTAURANT</div>
+										</div>
+									</div>
+									<div class="search_events">
+										<div class="date">WEDNESDAY MARCH 25, 2017</div>
+										<img alt="" src="../resources/icons/speaker_icon.png"
+											width="50px" style="float: left;">
+										<div style="float: left; text-align: left;">
+											<div style="font-size: 16px; padding: 5px;">LUNCH TIME</div>
+											<div style="font-size: 12px; padding: 5px;">CAN WE MEET
+												IN THE RESTAURANT AT SEDONA?</div>
+										</div>
+										<div style="float: right; text-align: right;">
+											<div class="time">11:00 AM</div>
+											<div class="location">RESTAURANT</div>
+										</div>
+									</div>
+									<button style="border: none;" class="see_all">SEE ALL</button>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- <div style="height: 700px;"> -->
+
+						<div class="calendar_body">
+
+							<!-- <div id="calendar_only" class="calendar_without_event"></div> -->
+							<div class="calendar_content">
+								<div id="date_event" class="calendar_with_event">
+									<div class="calendar">
+										<div class="show_date">
+											<img alt="" src="../resources/images/calendar-tree.png"
+												style="margin-left: -22px;" width="280px">
+											<div class="date_container">
+												<button class="date_circle">
+													<div id="today_date"
+														style="font-size: 32px; margin: 0 auto; display: inline; position: relative;">20</div>
+													<div id="today_month"
+														style="font-size: 20px; display: inline; margin: 0 auto; position: relative;">MARCH</div>
+												</button>
+												<div
+													style="margin-left: -10px; color: #e64f13; /* padding-left: 15px; */ width: 100%; text-align: center;">
+													<div id="plan_no" style="display: inline-block;">4</div>
+													PLANS TODAY
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="list" class="event_list">
+										<div class="today_list_title">
+											<div style="float: left;">TODAY LIST (</div>
+											<div id="today_list_count" style="float: left;">4</div>
+											)
+										</div>
+										<div style="width: 100%; height: 455px; overflow: auto;">
+											<div class="event_list_item">
+												<div class="event_content">
+													<img alt="" src="../resources/icons/speaker_icon.png"
+														height="40px" width="40px"
+														style="margin-top: 10px; float: left;">
+													<div style="float: left; height: 100%; width: 220px;">
+														<div style="font-size: 16px; height: 20px;">BREAKFAST
+															TIME</div>
+														<div style="font-size: 12px; height: 40px;">CAN WE
+															MEET IN THE KITCHEN OF OUR HOME?</div>
+													</div>
+													<div
+														style="float: right; height: 100%; width: 110px; padding-right: 5px; padding-top: 15px; padding-bottom: 10px; font-size: 12px; color: #e64f13; text-align: right;">
+														<div id="time" class="time_and_location"
+															style="background-image: url(../resources/icons/time_icon.png);">
+															<!-- <img alt="" src="../resources/icons/time_icon.png"
+																	height="30px" width="30px"
+																	style="margin-top: -5px; margin-bottom: -5px;"> -->
+															7:00 PM
+														</div>
+														<br>
+														<div id="location" class="time_and_location"
+															style="background-image: url(../resources/icons/location_icon.png);">
+															<!-- <img alt="" src="../resources/icons/location_icon.png"
+																	height="30px" width="30px"
+																	style="margin-top: -5px; margin-bottom: -5px;"> -->
+															HOME
+														</div>
+													</div>
+												</div>
+												<div class="event_action">
+													<div class="actions"
+														style="float: left; font-size: 14px; padding: 4px; margin-left: 5px;">ACCEPT</div>
+													<button class="actions delete">
+														DELETE
+													</button>
+													<button id="edit_event" class="actions edit">
+														EDIT
+													</button>
+												</div>
+											</div>
+											<div class="event_list_item">
+												<div class="event_content">
+													<img alt="" src="../resources/icons/speaker_icon.png"
+														height="40px" width="40px"
+														style="margin-top: 10px; float: left;">
+													<div style="float: left; height: 100%; width: 180px;">
+														<div style="font-size: 16px; height: 20px;">LUNCH
+															TIME</div>
+														<div style="font-size: 12px; height: 40px;">CAN WE
+															MEET IN THE RESTAURANT AT THE MYANMAR PLAZA?</div>
+													</div>
+													<div
+														style="float: right; height: 100%; width: 110px; padding-right: 5px; padding-top: 15px; padding-bottom: 10px; font-size: 12px; color: #e64f13; text-align: right;">
+														<div id="time" class="time_and_location"
+															style="background-image: url(../resources/icons/time_icon.png);">
+															<!-- <img alt="" src="../resources/icons/time_icon.png"
+																	height="30px" width="30px"
+																	style="margin-top: -5px; margin-bottom: -5px;"> -->
+															11:00 PM
+														</div>
+														<br>
+														<div id="location" class="time_and_location"
+															style="background-image: url(../resources/icons/location_icon.png);">
+															<!-- <img alt="" src="../resources/icons/location_icon.png"
+																	height="30px" width="30px"
+																	style="margin-top: -5px; margin-bottom: -5px;"> -->
+															RESTAURANT
+														</div>
+													</div>
+												</div>
+
+												<div class="event_action">
+													<div class="actions"
+														style="float: left; font-size: 14px; padding: 4px; margin-left: 5px;">MAY
+														BE</div>
+													<button class="actions delete">
+														DELETE
+													</button>
+													<button id="edit_event" class="actions edit">
+														EDIT
+													</button>
+												</div>
+											</div>
+											<div class="event_list_item">
+												<div class="event_content">
+													<img alt="" src="../resources/icons/speaker_icon.png"
+														height="40px" width="40px"
+														style="margin-top: 10px; float: left;">
+													<div style="float: left; height: 100%; width: 180px;">
+														<div style="font-size: 16px; height: 20px;">DINNER
+															TIME</div>
+														<div style="font-size: 12px; height: 40px;">CAN WE
+															MEET IN THE KITCHEN OF OUR HOME?</div>
+													</div>
+													<div
+														style="float: right; height: 100%; width: 110px; padding-right: 5px; padding-top: 15px; padding-bottom: 10px; font-size: 12px; color: #e64f13; text-align: right;">
+														<div id="time" class="time_and_location"
+															style="background-image: url(../resources/icons/time_icon.png);">
+															<!-- <img alt="" src="../resources/icons/time_icon.png"
+																	height="30px" width="30px"
+																	style="margin-top: -5px; margin-bottom: -5px;"> -->
+															7:00 PM
+														</div>
+														<br>
+														<div id="location" class="time_and_location"
+															style="background-image: url(../resources/icons/location_icon.png);">
+															<!-- <img alt="" src="../resources/icons/location_icon.png"
+																	height="30px" width="30px"
+																	style="margin-top: -5px; margin-bottom: -5px;"> -->
+															HOME
+														</div>
+													</div>
+												</div>
+												<div class="event_action">
+													<div class="actions"
+														style="float: left; font-size: 14px; padding: 4px; margin-left: 5px;">MAY
+														BE</div>
+													<button class="actions delete">
+														DELETE
+													</button>
+													<button id="edit_event" class="actions edit">
+														EDIT
+													</button>
+												</div>
+											</div>
+											<div class="event_list_item">
+												<div class="event_content">
+													<img alt="" src="../resources/icons/speaker_icon.png"
+														height="40px" width="40px"
+														style="margin-top: 10px; float: left;">
+													<div style="float: left; height: 100%; width: 180px;">
+														<div style="font-size: 16px; height: 20px;">DISCUSSION
+															TIME</div>
+														<div style="font-size: 12px; height: 40px;">CAN WE
+															MEET IN THE LIVING ROOM OF OUR HOME?</div>
+													</div>
+													<div
+														style="float: right; height: 100%; width: 110px; padding-right: 5px; padding-top: 15px; padding-bottom: 10px; font-size: 12px; color: #e64f13; text-align: right;">
+														<div id="time" class="time_and_location"
+															style="background-image: url(../resources/icons/time_icon.png);">
+															7:00 PM</div>
+														<br>
+														<div id="location" class="time_and_location"
+															style="background-image: url(../resources/icons/location_icon.png);">
+															HOME</div>
+													</div>
+												</div>
+												<div class="event_action">
+													<div class="actions"
+														style="float: left; font-size: 14px; padding: 4px; margin-left: 5px;">ACCEPT</div>
+													<button class="actions delete">
+														<div class="delete"></div>
+														DELETE
+													</button>
+													<button class="actions edit">
+														<div class="edit"></div>
+														EDIT
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div hidden id="grid" class="event_list"
+										style="background-color: #beeae0; padding: 0;">
+										<div class="today_list_title">
+											<div style="float: left;">TODAY LIST (</div>
+											<div id="today_list_count" style="float: left;">4</div>
+											)
+										</div>
+										<div
+											style="width: 100%; height: 480px; overflow: auto; background-color: #fef5e6; padding-left: 10px;">
+											<div class="event_grid_item" style="float: left;">
+												<div class="event_grid_content">
+													<div class="photowithtime">
+														<div class="photoforuser" style="float: left;">
+															<img class="img-circle" id="user_image">
+														</div>
+														<div class="postforuser" style="float: right;">
+															FATHER POST THIS BY LAST TWO DAYS.</div>
+													</div>
+													<div class="titlewithdetail">
+														<div class="topictitle">BREAKFAST TIME</div>
+														<div class="topic">CAN WE MEET IN THE KITCHEN OF OUR
+															HOME?</div>
+													</div>
+													<div id="time" class="grid_time_and_location"
+														style="bottom: 20px; background-image: url(../resources/icons/time_icon.png);">
+														7:00 PM</div>
+													<br>
+													<div id="location" class="grid_time_and_location"
+														style="bottom: 0px; background-image: url(../resources/icons/location_icon.png);">
+														HOME</div>
+												</div>
+												<div class="event_action">
+
+													<div
+														style="float: left; font-size: 14px; margin-left: 3px; margin-top: 6px;">MAY
+														BE</div>
+													<button class="actions delete">DELETE</button>
+													<button class="actions edit">EDIT</button>
+												</div>
+											</div>
+											<div class="event_grid_item" style="float: left;">
+												<div class="event_grid_content">
+													<div class="photowithtime">
+														<div class="photoforuser" style="float: left;">
+															<img class="img-circle" id="user_image">
+														</div>
+														<div class="postforuser" style="float: right;">
+															CHRISTINE POST THIS BY LAST TWO DAYS.</div>
+													</div>
+													<div class="titlewithdetail">
+														<div class="topictitle">LUNCH TIME</div>
+														<div class="topic">CAN WE MEET IN THE RESTAURANT AT
+															THE MYANMAR PLAZA? blah blah blah blah blah blah blah</div>
+													</div>
+													<div id="time" class="grid_time_and_location"
+														style="bottom: 20px; background-image: url(../resources/icons/time_icon.png);">
+														7:00 PM</div>
+													<br>
+													<div id="location" class="grid_time_and_location"
+														style="bottom: 0px; background-image: url(../resources/icons/location_icon.png);">
+														HOME</div>
+
+												</div>
+												<div class="event_action">
+
+													<div
+														style="float: left; font-size: 14px; margin-left: 3px; margin-top: 6px;">MAY
+														BE</div>
+													<button class="actions delete">DELETE</button>
+													<button class="actions edit">EDIT</button>
+												</div>
+											</div>
+											<div class="event_grid_item" style="float: left;">
+												<div class="event_grid_content">
+													<div class="photowithtime">
+														<div class="photoforuser" style="float: left;">
+															<img class="img-circle" id="user_image">
+														</div>
+														<div class="postforuser" style="float: right;">
+															JUSTIN POST THIS BY LAST TWO DAYS.</div>
+													</div>
+													<div class="titlewithdetail">
+														<div class="topictitle">DINNER TIME</div>
+														<div class="topic">CAN WE MEET IN THE KITCHEN OF OUR
+															HOME?</div>
+													</div>
+													<div id="time" class="grid_time_and_location"
+														style="bottom: 20px; background-image: url(../resources/icons/time_icon.png);">
+														7:00 PM</div>
+													<br>
+													<div id="location" class="grid_time_and_location"
+														style="bottom: 0px; background-image: url(../resources/icons/location_icon.png);">
+														HOME</div>
+
+												</div>
+												<div class="event_action">
+
+													<div
+														style="float: left; font-size: 14px; margin-left: 3px; margin-top: 6px;">MAY
+														BE</div>
+													<button class="actions delete">DELETE</button>
+													<button class="actions edit">EDIT</button>
+												</div>
+											</div>
+											<div class="event_grid_item" style="float: left;">
+												<div class="event_grid_content">
+													<div class="photowithtime">
+														<div class="photoforuser" style="float: left;">
+															<img class="img-circle" id="user_image">
+														</div>
+														<div class="postforuser" style="float: right;">
+															ALICE POST THIS BY LAST TWO DAYS.</div>
+													</div>
+													<div class="titlewithdetail">
+														<div class="topictitle">DISCUSSION TIME</div>
+														<div class="topic">CAN WE MEET IN THE LIVING ROOM OF
+															OUR HOME?</div>
+													</div>
+													<div id="time" class="grid_time_and_location"
+														style="bottom: 20px; background-image: url(../resources/icons/time_icon.png);">
+														7:00 PM</div>
+													<br>
+													<div id="location" class="grid_time_and_location"
+														style="bottom: 0px; background-image: url(../resources/icons/location_icon.png);">
+														HOME</div>
+
+												</div>
+												<div class="event_action">
+
+													<div
+														style="float: left; font-size: 14px; margin-left: 3px; margin-top: 6px;">MAY
+														BE</div>
+													<button class="actions delete">DELETE</button>
+													<button class="actions edit">EDIT</button>
+												</div>
+											</div>
+
+											<div class="event_grid_item" style="float: left;">
+												<div class="event_grid_content">
+													<div class="photowithtime">
+														<div class="photoforuser" style="float: left;">
+															<img class="img-circle" id="user_image">
+														</div>
+														<div class="postforuser" style="float: right;">
+															ALICE POST THIS BY LAST TWO DAYS.</div>
+													</div>
+													<div class="titlewithdetail">
+														<div class="topictitle">DISCUSSION TIME</div>
+														<div class="topic">CAN WE MEET IN THE LIVING ROOM OF
+															OUR HOME?</div>
+													</div>
+													<div id="time" class="grid_time_and_location"
+														style="bottom: 20px; background-image: url(../resources/icons/time_icon.png);">
+														7:00 PM</div>
+													<br>
+													<div id="location" class="grid_time_and_location"
+														style="bottom: 0px; background-image: url(../resources/icons/location_icon.png);">
+														HOME</div>
+
+												</div>
+												<div class="event_action">
+
+													<div
+														style="float: left; font-size: 14px; margin-left: 5px; margin-top: 6px;">MAY
+														BE</div>
+													<button class="actions delete">DELETE</button>
+													<button class="actions edit">EDIT</button>
+												</div>
+											</div>
+
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer_buttons">
+							<table>
+								<tr>
+									<td><button id="today" class="tdy_calendar_inbox">TODAY</button></td>
+									<td><button id="show_calendar" class="tdy_calendar_inbox">CALENDAR</button></td>
+									<td><button id="show_inbox" class="tdy_calendar_inbox">
+											<div style="display: inline-block;">INBOX(</div>
+											<div id="inbox_count" style="display: inline-block;">1</div>
+											<div style="display: inline-block;">)</div>
+										</button></td>
+								</tr>
+							</table>
+						</div>
+						<div
+							style="position: absolute; bottom: 0; width: 100%; height: 25px; background-image: url(../resources/images/calendar_block_bg.png); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- </div> -->
+
+	<script type="text/javascript" src="../resources/js/header.js"></script>
+	<script type="text/javascript">
+
+ 		document.getElementById("show_inbox").onclick = function() {
+				location.href = "http://localhost:8080/FamilyApp/views/replied_event.html";
+ 	 		};
+
+ 		document.getElementById("show_calendar").onclick = function() {
+				/* document.getElementById("date_event").setAttribute("hidden", true);
+				document.getElementById("calendar_only").removeAttribute("hidden"); */
+	 		};
+
+	 	document.getElementById("today").onclick = function() {
+				document.getElementById("calendar_only").setAttribute("hidden", true);
+				document.getElementById("date_event").removeAttribute("hidden");
+	 		};
+
+	 	document.getElementById("edit_event").onclick = function() {
+			location.href = "http://localhost:8080/FamilyApp/views/event_detail.html";
+ 	 		};
+
+ 	 	document.getElementById("add_event").onclick = function() {
+ 			location.href = "http://localhost:8080/FamilyApp/views/create_event.html";
+ 	 	 	};
+
+ 	 	document.getElementById("list_view").onclick = function() {
+ 	 		document.getElementById("grid").setAttribute("hidden", true);
+			document.getElementById("list").removeAttribute("hidden");
+ 	 	 	};	
+
+ 	 	document.getElementById("grid_view").onclick = function() {
+ 	 		document.getElementById("list").setAttribute("hidden", true);
+			document.getElementById("grid").removeAttribute("hidden");	
+ 	 	    };
+ 	</script>
+
+</body>
+</html>

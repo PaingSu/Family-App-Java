@@ -1,0 +1,103 @@
+#pagefooterwithwaiting_familyBox{
+	background-position:right 0 bottom 0;
+	height: 720px;
+	background-size: contain;
+	background-image: url(../images/topic_footer_bg.png);
+	background-repeat: no-repeat;
+}
+
+#waitfamilyInfo{
+	top:3%;
+	background-color: white;
+	background:rgba(255,255,255, 0.99);
+    height: 300px;
+ 	box-shadow: 0px 5px 15px 5px #d0c8bc;  
+ 	background-size: 100% 100%;
+}
+
+.waitfamilyInfo_center{
+	width: 100%; 
+	height: 94%; 
+	top: 3%; 
+	margin: 0 auto;
+	position: relative;
+	background-color: #beeae0;
+}
+
+
+.centerfortext{
+	margin: 0 auto;
+	position: relative;
+  	top: 5%; 
+ 	width: 60%;
+    height: 90%;  
+ 	overflow: auto;
+}
+
+.centertitle{
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+  	top: 3%; 
+ 	width: 100%;
+    height: 15%; 
+}
+
+.centerphotowithname{
+	margin: 0 auto;
+	position: relative;
+  	top: 5%; 
+ 	width: 90%;
+    height: 60%;  
+ 	overflow: auto;
+}
+
+.centerphoto{
+	text-align: center;
+	margin: 0 auto;
+	position: relative; 
+ 	width: 80%;
+    height: 70%;  
+ 	overflow: auto;
+}
+
+#waitprofilephoto{
+	width: 90px;
+    height:90px;
+	background-image: url(../images/image_boy_profile.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.centername{
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;	
+	text-align: center;
+	margin: 0 auto;
+	position: relative; 
+ 	width: 80%;
+    height: 25%;  
+ 	overflow: auto;
+}
+
+.centercancelbutton{
+	text-align:center;
+	margin: 0 auto;
+	position: relative;
+  	top: 5%; 
+ 	width: 90%;
+    height: 15%;  
+ 	overflow: auto;
+ 	
+}
+
+.canelwaiting{
+	width: 80px;
+	height: 90%;
+	background-color: #59c6ad;
+	top:5%;
+	position:relative;
+	margin: 0px auto;
+	border: none;
+}

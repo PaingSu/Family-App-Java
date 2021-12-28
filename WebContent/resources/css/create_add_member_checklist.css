@@ -1,0 +1,266 @@
+/* thiri */
+
+
+@CHARSET "ISO-8859-1";
+
+.col-lg-12 {
+	padding: 0;
+}
+
+@font-face { font-family: ChalkboardSE-Bold; src: url('../fonts/ChalkboardSE-Bold.otf') format('TrueType'); }
+
+@media screen {
+	.background_div {
+		min-width: 800px;
+	}
+	
+	.header {
+		min-width: 800px;
+	}
+		
+	html {
+		min-width: 800px;
+	}
+}
+
+.background_div {
+	min-height: 900px;
+	width: 100%;
+	background-image: url("../images/topic_footer_bg.png");
+	background-position: right 0 bottom 0;
+	background-size: contain;
+	background-repeat: no-repeat;	
+	position: relative;
+	background-color: transparent;
+	padding-top: 50px;
+	padding-bottom: 200px;
+	
+}
+
+#white_box_create_add_member_checklist {
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	/* left: 15%;
+	right: 15%; */
+	width: 100%;
+	min-height: 400px;
+	max-height: 580px;
+	box-shadow: 0px 5px 15px 5px #d0c8bc;
+	background-size: 100% 100%;	
+	border-radius: 5px;
+}
+
+.checklist_nav_bar {
+	width: 86%;
+	height: 35px;
+	margin-left: 7%;
+	margin-right: 7%;
+	background-color: transparent;
+	border: none;	
+	margin-top: 25px;
+}
+
+.checklist_nav_bar .add_all {
+	background-image: url("../icons/add_all_icon.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	float: right;
+	width: 28px;
+	height: 28px;
+	margin-top: 3px;
+	margin-left: 7px;
+	margin-bottom: 3px;
+	border: none;
+}
+
+/*.checklist_nav_bar .search_bar {
+	float: right;
+	width: 280px;
+	height: 28px;
+	border: none;
+	background-color: transparent;
+	border-radius: 50px;
+	margin-top: 3px;
+    margin-bottom: 3px;
+	box-shadow: 3px 3px 1px #DCDCDC inset;
+}
+
+ .checklist_nav_bar .search_bar .search_icon {
+	float: left;
+	background-image: url("../icons/gray_search_icon.png");
+	background-position: center;
+	background-size: 55% 55%;
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	border: none;
+	margin-bottom: 1.5px;
+	margin-top: 1.5px;
+	background-color: transparent;
+}
+
+.checklist_nav_bar .search_bar .search {
+	font-family: ChalkboardSE-Bold;
+	width: 230px;
+	height: 25px;
+	float: left;
+    padding: 6px;
+    border: none;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 0px;
+    font-size: 12px;
+    margin-bottom: 1.5px;
+	margin-top: 1.5px;
+	box-shadow: none;
+}
+
+.checklist_nav_bar .search_bar .cancel_button {
+	float: left;
+	width: 21px;
+	height: 21px;
+	border-color: transparent;
+	background-color: transparent;
+	background-image: url("../icons/gray_cancel_icon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+} */
+
+#add_member_group {
+	width: 86%;
+	max-height: 300px;
+	margin-left: 7%;
+	margin-right: 7%;
+	background-color: transparent;
+	border: none;	
+	overflow: auto;
+}
+
+#add_member {
+	width: 100%;
+	height: 50px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #beeae0;
+	border-color: transparent;	
+	margin-top: 10px;
+}
+
+#user_pic {
+	background-image: url("../icons/user_icon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 34px;
+	height: 34px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 10px;
+	border-color: transparent;
+	float: left;
+	background-position: center;
+}
+
+
+#name_relationship {
+	width: 70px;
+	height: 34px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 20px;
+	float: left;
+}
+
+#name {
+	font-family: ChalkboardSE-Bold;
+	font-size: 14px;
+	width: 150px;
+	height: 18px;
+	margin: 0px;
+	text-align: left center;
+}
+
+#relationship {
+	font-family: ChalkboardSE-Bold;
+	font-size: 12px;
+	width: 150px;
+	height: 16px;
+	margin: 0px;
+	text-align: left center;
+}
+
+ #add_member .add_member_button {
+	background-color: #59c6ad;
+	border-color: transparent;
+	width: 60px;
+	height: 30px;
+	font-family: ChalkboardSE-Bold;
+	font-size: 16px;
+	float: right;
+	margin: 10px;
+	text-align: center middle;
+}
+
+#added_member_group {
+	width: 86%;
+	min-height: 50px;
+	max-height: 110px;
+	background-color: transparent;
+	margin-left: 7%;
+	margin-right: 7%;
+	display: inline-block;	
+	margin-top: 10px;
+	overflow: auto;
+}
+
+#added_member_group div:not(:FIRST-CHILD) {
+	margin-left: 1.33%;
+}
+
+#added_member {
+	min-width: 170px;
+	width: 24%;
+	height: 50px;
+	background-color: #beeae0;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.cancel_added_member {
+	background-image: url("../icons/cancel_icon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 24px;
+	height: 24px;
+	margin-right: 13px;
+	margin-bottom: 13px;
+	margin-top: 13px;
+	float: right;	
+	border-color: transparent;
+}
+
+.cancel_done_container {
+	width: 86%;
+	height: 50px;
+	background-color: transparent;
+	margin-left: 7%;
+	margin-right: 7%;	
+	margin-bottom: 20px;
+}
+
+.cancel_done_buttons {
+	width: 120px;
+	height: 45px;
+	background-color: #beeae0;
+	border-color: transparent;
+	font-size: 16px;
+	font-family: ChalkboardSE-Bold;
+	text-align: center;
+	float: right;
+	margin-left: 10px;
+}

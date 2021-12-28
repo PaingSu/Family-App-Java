@@ -1,0 +1,509 @@
+@media screen {
+	.edit_profileBox {
+		min-width: 1000px;
+		min-height: 1000px;
+	}
+}
+
+
+.profile_container {
+	width:70px;
+	height: 130px;
+	border: none;
+	float: right;
+	margin-right: 20px;
+}
+
+.profile_pic_name {
+	width: 100%;
+	height: 110px;
+	background-color: #59c6ad;
+	margin: 0;
+}
+
+.profile_button {
+	padding: 9px; 
+	width: 100%; 
+	height: 90px; 
+	background-color: transparent;
+	margin-top: 20px;
+	border: none;
+}
+
+.arrowhead_border {
+	width: 0; 
+  	height: 0; 
+  	border-left: 35px solid transparent;
+  	border-right: 35px solid transparent; 
+  	border-top: 20px solid #59c6ad;
+}
+
+.header_buttons {
+	height: 250px;
+	width: 70%;
+	padding-right: 25px;
+	float: right;
+	font-family: ChalkboardSE;   	 
+	color: #000000;
+	font-size: 12px;
+	z-index: 4;
+}
+
+.header_btn {
+	background-color: #beeae0;	
+	height: 90px;
+	width: 95px;
+	border: none;
+	box-shadow: 1px 1px 20px 8px rgba(128, 128, 128, 0.3);
+	float: right;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+
+.header_btn:HOVER {
+	background-color: #59c6ad;
+}
+
+.header_btn:ACTIVE {
+	background-color: #59c6ad;
+}
+
+.header_btn:FOCUS {
+	background-color: #59c6ad;
+}
+
+.header_btnfp{
+	background-color: #59c6ad;	
+	height: 80px;
+	width: 80px;
+	border: none;
+	box-shadow: 1px 1px 20px 8px rgba(128, 128, 128, 0.3);
+	float: right;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.header_btnfp:HOVER {
+	background-color: #59c6ad;
+}
+
+.header_btnfp:ACTIVE {
+	background-color: #59c6ad;
+}
+
+.header_btnfp:FOCUS {
+	background-color: #59c6ad;
+}
+
+
+
+font{
+	font-family: ChalkboardSE;  	 
+	color: #000000;
+	font-size: 16px;
+}
+
+.placeholder {
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #7f7a73; 
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 15px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px 1px #d0c8bc;
+       
+    font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+input[type=email], select {
+  	width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px 1px #d0c8bc;
+       
+    font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+input[type=password], select {
+
+    width: 100%;
+    padding: 10px 11px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px 1px #d0c8bc;
+       
+    font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 2px #d0c8bc;
+    
+}
+
+button {
+	background-color: #beeae0;
+	font-size: 16px;
+	color: #000000;
+	font-family: ChalkboardSE;
+	width: 100px;
+    height: 40px;      
+}
+
+
+button:focus {outline:0;}
+
+
+
+
+
+
+
+.pagefooterwithedit_profileBox{
+	background-position:right 0 bottom 0;
+	height: 1020px;	
+	background-size: contain; 
+	background-image: url(../images/user_profile_footer_bg.png);
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	
+}
+
+
+
+.edit{
+	position:relative;
+	left: 20%;
+	width: 60%;
+    height:30px;
+}
+
+.editbtn{
+	width:130px;
+	height:30px;
+	background-color: #beeae0;
+	border-radius: 5px;
+	border: none;
+}
+
+.edit_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/pencil-edit-button.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 10px;
+}
+
+.edit_text{
+	width: 80px;
+    height:20px;  
+}
+
+#edit_photo{
+	height: 150px;
+	border: 2px solid #beeae0;
+}
+
+
+
+
+
+
+.editprofileInfo{
+	margin-top:1px;
+	position:absolute;
+	background-color: white;
+	background:rgba(255,255,255, 0.8);
+   	left: 20%;
+ 	width: 60%;
+    height: 750px;
+ 	box-shadow: 0px 5px 15px 5px #d0c8bc;  
+ 	margin: 0px auto;
+ 	background-size: 100% 100%;
+
+}
+
+
+.edit_photo{
+	width: 100%;
+	height: 150px;
+	border: 2px solid #beeae0;
+}
+
+#profilephoto_image{
+	top: 100px;
+    width: 100px;
+    height:100px;
+	background-image: url(../images/image_boy_profile.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 41%;
+	margin-right: 41%;
+	position: absolute;	
+	background-color: #beeae0;
+}
+
+
+
+.profilephoto_cover{
+	margin: 0px auto;
+    width: 100%;
+    height:100%;
+	background-image: url(../images/user_profile_cover_photo.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+
+
+
+
+.editprofileInfo_center{
+	width: 85%; 
+	height: 70%; 
+	top: 7%; 
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+
+
+
+.user_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/user_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.username{
+	width: 100%;
+    height:30px;
+}
+
+.user_name{
+	width: 50px;
+    height:20px;
+    margin-top: 5px;
+}
+
+input[type=text], select {
+    width: 99%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 2px #d0c8bc;
+    margin-left: 5px;
+}
+
+.useremail_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/email_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.useremail{
+	width: 100%;
+    height:30px;
+}
+
+.useremail_name{
+	width: 50px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.userpassword_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/password_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.userpassword{
+	width: 100%;
+    height:30px;
+}
+
+.userpassword_name{
+	width: 50px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.retypepassword_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/password_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.retypepassword{
+	width: 100%;
+    height:30px;
+}
+
+.retypepassword_name{
+	width: 300px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.gendermf{
+	width: 100%;
+    height:30px;
+}
+
+.male{
+	width: 100px;
+    height:20px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+
+.female{
+	width: 100px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.male span{
+   	position:absolute;
+   	padding-left:20px;
+   	font-size: 16px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+.female span{
+  	position:absolute;
+   	padding-left:20px;
+   	font-size: 16px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+
+.birthday_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/birthday_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.birthday{
+	width: 100%;
+    height:30px;
+    margin-top: 7px;
+}
+
+.birthday_date{
+	width: 300px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.date_container{
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	height: 10%;
+}
+
+
+
+.open-button{
+	top: 34%;
+	margin-left: 95%;
+	height: 20px;
+  	width: 20px;
+	position: absolute;
+  	pointer-events: none;
+  	background-image: url(../icons/calendar_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;  	
+}
+
+
+.phoneno_icon{
+	width: 20px;
+    height:25px;
+	background-image: url(../icons/phone_no_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+.phone{
+	width: 100%;
+    height:30px;
+    margin-top: 7px;
+}
+
+.phoneno{
+	width: 300px;
+    height:20px;
+    margin-top: 5px;
+}
+

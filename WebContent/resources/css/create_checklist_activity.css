@@ -1,0 +1,548 @@
+/* thiri */
+
+@CHARSET "ISO-8859-1";
+
+.col-lg-12 {
+	padding: 0;
+}
+
+@media screen {
+	.background_div {
+		min-width: 1000px;
+	}
+	
+	.header {
+		min-width: 1000px;
+	}
+	
+	.members {
+		min-width: 130px;
+	}
+	
+	html {
+		min-width: 1000px;
+	}
+	
+	#white_box_create_checklist_activity {
+		margin-left: 5%;
+		margin-right: 5%;
+	/* 	min-width: 800px; */
+	}
+}
+
+
+.background_div {
+	min-height: 1500px;
+	width: 100%;
+	background-image: url("../images/checklist_footer_bg.png");
+	background-position: right 0 bottom 0;
+	background-size: contain;
+	background-repeat: no-repeat;	
+	position: relative;
+	background-color: transparent;
+	padding-bottom: 200px;
+}
+
+.buttons_div {
+	margin-top: 10px;
+	height: 50px;
+	border: none;
+}
+
+.buttons_div .cancel_done {
+	width: 120px;
+	height: 40px;
+	background-color: #beeae0;
+	border-color: transparent;
+	font-size: 16px;
+	font-family: ChalkboardSE-Bold;
+	text-align: center;
+	float: right;
+	margin-left: 10px;
+	box-shadow: 0px 2px 2px 1px #DCDCDC;
+	margin-top: 10px;
+}
+
+
+#white_box_create_checklist_activity {
+	background-color: rgba(255,255,255,0.9);
+	/* position: absolute; */
+	top: 10px;
+	/* margin-left: 25%;
+	margin-right: 25%; */
+	width: 100% auto;
+	max-height: 1550px;
+	bottom: 100px;
+	box-shadow: 0px 5px 15px 5px #d0c8bc;
+	background-size: 100% 100%;	
+	padding: 3% 2.5%;
+	overflow: auto;
+	padding-bottom: 30px;
+	font-family: ChalkboardSE-Bold;
+}
+
+.titles_inputs {
+	width: 100%;
+	height: 75px;
+	margin-bottom: 20px;	
+	margin-left: 0%;
+	margin-right: 0%;
+	background-color: transparent;
+	border: none;
+}
+
+
+.titles_inputs .titles {
+	width: 200px;
+	height: 20px;
+	font-family: ChalkboardSE-Bold;
+	font-size: 14px;
+	border-color: transparent;
+	padding: 0px 5px;
+	margin-bottom: 5px;
+}
+
+.input_div {
+	float: left;
+	width: 100%;
+	height: 45px;
+	border-color: #DCDCDC;
+	background-color: transparent;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+}
+
+.inputs {
+	font-family: ChalkboardSE-Bold;
+	width: 80%;
+	height: 45px;
+	float: left;
+    padding: 6px;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 0px;
+    font-size: 12px;    
+}
+
+.add-member {
+	min-height: 45px;
+	border-color: #DCDCDC;
+	background-color: transparent;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+	
+}
+
+.add {
+	margin-top: 40px;
+	min-height: 45px;
+	border-color: #DCDCDC;
+	background-color: transparent;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+	padding-left: 10px;
+	padding-top: 14px;
+	overflow: hidden;
+}
+
+.members {
+	height: 40px;
+	width: 24.3%;
+	margin-right: 5px;
+	background-color: #beeae0;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.cancel-member {
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-image: url("../icons/cancel_icon.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	margin-top: 10px;
+	border-color: transparent;
+}
+
+.create-checklist {
+	margin-top: 40px;
+	min-height: 45px;
+	border-color: #DCDCDC;
+	background-color: transparent;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+	padding-left: 10px;
+	padding-top: 14px;
+}
+
+.addIcon {
+	float: right;
+	margin-top: -8px;
+	margin-right: 10px;	
+	float: right center;
+	background-color: transparent;
+	border: none;
+	background-image: url("../icons/add_icon.png");
+	background-position: 3px 3px;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+}
+
+.titles_inputs .input_div .addIcon {
+	margin-top: 5px;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+
+.checklist_tasks {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	/* overflow: auto; */
+	/* max-height: 350px; */
+	padding: 1px;
+}
+
+.checklist_task_number {
+	font-family: ChalkboardSE-Bold;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 5px;
+	box-shadow: 1px 2px 10px 1px #DCDCDC;
+	margin-bottom: 10px;
+}
+
+.checklist_task_number .title_bar {
+	width: 100%;
+	height: 40px;
+	font-family: ChalkboardSE-Bold;
+	font-size: 14px;
+	border-color: transparent;
+	padding: 0px 5px;
+	margin-top: 10px;
+}
+
+
+
+.show_more_or_less {
+	/* background-image: url("../icons/up_icon.png"); */
+	width: 25px;
+	height: 20px;
+	float: right;
+	margin: 10px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+}
+
+[aria-expanded="true"].show_more_or_less {
+	background-image: url("../icons/up_icon.png");
+}
+
+[aria-expanded="false"].show_more_or_less {
+	background-image: url("../icons/down_icon.png");
+}
+
+.task_body {
+	background-color: transparent;
+	width: 100%;
+	border: none;
+}
+
+.small_task {
+	margin-left: 20px;
+	font-family: ChalkboardSE-Bold;
+	font-size: 12px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+}
+
+
+
+.comment_div {
+	height: 52px;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: transparent;
+}
+
+#user_pic {
+	background-image: url("../icons/user_icon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 34px;
+	height: 34px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 10px;
+	border-color: transparent;
+	float: left;
+	background-position: center;
+}
+
+.comment_div #user_pic {
+	margin-top: 9px;
+	float: left;
+	margin-left: 0px;
+}
+
+.comment_div .input_container {
+	/* border-color: grey; */
+	background-color: transparent;
+	height: 52px;
+	margin-left: 35px;
+	margin-right: 80px;
+	font-family: ChalkboardSE-Bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto;
+	padding-top: 8px;
+}
+
+.comment_div .input_container .text {
+	border: 1px solid #beeae0;	
+	background-color: #ffffff;	
+	color: gray;
+	box-shadow: none;
+	height: 36px;
+	width: 100%;
+}
+
+#send_comment {
+	font-family: ChalkboardSE-Bold;
+	height: 34px;
+	width: 80px;
+	background-color: #beeae0;
+	border: none;
+	margin-top: 9px;
+	margin-right: 0;
+	float: right;
+}
+
+.activity_bar {
+	font-size: 14px;
+	color: #000000;
+	opacity: rgba(0,0,0,0.3)#000000 Opacity 40%;
+	font-family: ChalkboardSE-Bold;
+	width: 100%;
+	height: 40px;
+	background-color: transparent;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.activity_icon {
+	background-image: url('../icons/activity_icon.png'); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	width: 20px; 
+	height: 20px; 
+	margin-left: 12px; 
+	margin-top: 10px;
+	float: left;
+}
+
+#filter_button {
+	background-image: url("../icons/setting_icon.png");
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	width: 22px; 
+	height: 22px; 
+	margin-right: 12px; 
+	margin-top: 9px;
+	float: right;
+	background-color: transparent;
+	border: none;
+}
+
+.dropdown-menu-right {
+	right: 20px;
+	top: 28px;
+	left: auto;
+}
+
+.checklist_activities {
+	width: 100%;
+	border-radius: 5px;
+	opacity: rgba(0,0,0,0.3)#000000 Opacity 40%;
+	font-family: ChalkboardSE-Bold;
+	box-shadow: 0px 2px 10px 1px #DCDCDC;
+	padding: 10px 15px 15px;
+	/* max-height: 355px;
+	overflow: auto; */
+}
+
+.comments_header {
+	width: 100%;
+	height: 60px;
+	border: none;
+	opacity: rgba(0,0,0,0.3)#000000 Opacity 40%;
+	margin-bottom: 10px;
+}
+
+.comments_header .pic_and_name {
+	width: 40px;
+	height: 60px;
+	margin-right: 10px;
+	float: left;
+}
+
+.creator_pic {
+	width: 100%;
+	height: 40px;
+}
+
+.creator_name {
+	font-size: 16px; 
+	text-align: center;
+	float: left;
+}
+
+.comments_header .datetime_and_comment_header {
+	height: 44px;
+	opacity: rgba(0,0,0,0.3)#000000 Opacity 40%;
+	border: none;
+	margin-left: 10px;
+	font-size: 16px;
+	font-family: ChalkboardSE-Bold;
+	float: left;
+	margin-top: 6px;
+}
+
+.comments_header .datetime_and_comment_header .date_and_time {
+	height: 20px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	color: grey;
+}
+
+.comments_header .datetime_and_comment_header .date_and_time .activity_clock {
+	float: left;
+	height: 20px;
+	margin: 0;
+	width: 20px;
+	background-image: url("../icons/clock_icon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 10px;
+}
+
+.comments_header .datetime_and_comment_header div .activity_datetime_comment {
+	height: 20p;
+	margin-right: 5px;
+	float: left;
+}
+
+.comments_header .datetime_and_comment_header .comment_text {
+	height: 20px;
+	margin: 1px;
+	color: #000000;
+}
+
+.checklist_activities .activity_items {
+	font-family: ChalkboardSE-Bold;
+	height: 60px;
+	width: 100%;
+	border-bottom: solid 2px #beeae0;;
+	border-bottom-color: #beeae0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+
+.activity_items .checked_icon{
+	height: 50px;
+	width: 20px;
+	margin-left: 10px;
+	margin-right: 5px;
+	float: left;
+}
+
+.activity_items .activity_completed_and_date {
+	height: 50px;
+	float: left;
+}
+
+.activity_items .activity_completed_and_date .completed_task {
+	font-size: 16px;
+	height: 21px;
+	margin-bottom: 5px;
+	text-align: center;	
+}
+
+.activity_items .activity_completed_and_date .complete_date {
+	font-size: 14px;
+	height: 21px;
+	margin-top: 2px;
+}
+
+.activity_items .activity_completed_and_date .complete_date .detail_date_and_time {
+	height: 21p;
+	margin-right: 5px;
+	float: left;
+	color: gray;
+}
+
+.task_add_item {
+	margin-left: 25px;
+	font-family: ChalkboardSE-Bold;
+	font-size: 14px;
+	border-radius: 10px;
+	color: #000000;
+	background-color: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.title_bar input[type=checkbox] {
+	display: none;
+}
+
+.title_bar .large_task {
+	background-image: url("../icons/no_check_icon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+.title_bar input[type=checkbox]:CHECKED + .large_task {
+	background-image: url("../icons/check_green_icon.png");
+	
+}
+
+.small_task input[type=checkbox] {
+	display: none;
+}
+
+.small_task .small-task-checkbox {
+	background-image: url("../icons/no_check_icon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+.small_task input[type=checkbox]:CHECKED + .small-task-checkbox {
+	background-image: url("../icons/check_red_icon.png");
+}

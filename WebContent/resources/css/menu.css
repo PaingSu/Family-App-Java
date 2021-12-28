@@ -1,0 +1,29 @@
+menu :HOVER {
+	background-color: 59c6ad;
+	font-size: 12px;
+}
+
+menu {
+	background-color: #beeae0;
+	font-size: 12px;
+}
+
+menu #boy_profile {
+	background-color: #59c6ad;
+	font-size: 14px;
+}
+
+menu #girl_profile {
+	background-color: #fbd5df;
+	font-size: 14px;
+}
+
+menu .tab button.disbaled {
+	font-size: 14px;
+	background-color: #beeae0 opacity 60%;
+}
+
+menu .tab button :ACTIVE {
+	font-size: 14px;
+	background-color: #59c6ad;
+}

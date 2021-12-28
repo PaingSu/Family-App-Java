@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HOME PAGE</title>
+
+<link href="../resources/css/bootstrap-theme.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap-theme.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/main.css" type="text/css" rel="stylesheet">
+<link href="../resources/css/homepage.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/header_and_buttons.css" type="text/css"
+	rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<div class="container" style="width: 100%;">
+			<div class="row">
+				<div class="col-lg-3 col-sm-4 col-md-3 col-xs-4"
+					style="height: 280px; margin: 0; padding: 0;">
+					<button class="app_logo"></button>
+				</div>
+				<div class="col-lg-8 col-sm-7 col-md-8 col-xs-6">
+					<div class="row" style="height: 140px;">
+						<div class="header_buttons">
+							<button id="logout" class="header_btn" id="header_logout">
+								<img alt="" src="../resources/icons/logout_icon.png"
+									width="35px;" style="transform: scaleX(-1);"> LOGOUT
+							</button>
+							
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="background_div">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+				
+					<table>
+						<tr>
+							<td>
+								<button class="menu_btn" id="menu_family_profile" style="background-image: url(../resources/icons/family_profile_icon.png);">FAMILY PROFILE</button>
+							</td>
+							<td>
+								<button class="menu_btn" id="menu_checklist" style="background-image: url(../resources/icons/checklist_icon.png);">CHECKLIST</button>
+							</td>
+							<td>
+								<button class="menu_btn" id="menu_discussion" style="background-image: url(../resources/icons/discussion_icon.png);">DISCUSSION</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button class="menu_btn" id="menu_notification" style="background-image: url(../resources/icons/noti_icon.png);background-position: 50px 10px; background-size: 70px 60px;">NOTIFICATION</button>
+							</td>
+							<td>
+								<button class="menu_btn" id="menu_calendar" style="background-image: url(../resources/icons/dashboard_calendar_icon.png); background-position: 50px 6px;">CALENDAR AND SCHEDULE</button>
+							</td>
+							<td>
+								<button class="menu_btn" id="menu_chatting" style="background-image: url(../resources/icons/groupchat_icon.png);background-position: 45px 10px; background-size:80px 70px;">GROUP CHAT</button>
+							</td>
+						</tr>
+					</table>
+				
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		document.getElementById("menu_family_profile").onclick = function() {
+			location.href = "http://localhost:8080/FamilyApp/views/index.html";
+			};
+
+		document.getElementById("menu_checklist").onclick = function() {
+			location.href = "http://localhost:8080/FamilyApp/views/checklist.html";
+			};
+
+		document.getElementById("menu_discussion").onclick = function() {
+			location.href = "http://localhost:8080/FamilyApp/views/index.html";
+			};
+
+		document.getElementById("menu_notification").onclick = function() {
+			location.href = "http://localhost:8080/FamilyApp/views/notification.html";
+			};
+
+		document.getElementById("menu_calendar").onclick = function() {
+			location.href = "http://localhost:8080/FamilyApp/views/calendar.html";
+			};
+
+		document.getElementById("menu_chatting").onclick = function() {
+			location.href = "http://localhost:8080/FamilyApp/views/chatting.html";
+			};
+	</script>
+
+</body>
+</html>

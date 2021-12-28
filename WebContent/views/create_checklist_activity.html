@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  $(function() {
+	    $( "#datepicker" ).datepicker({
+	      showOn: "button",
+	      buttonImage: "../resources/icons/calendar_icon.png",
+	      buttonImageOnly: true,
+	      buttonText: "Select date",
+	    });
+	   $(".ui-datepicker-trigger").css({"height" : "25px", "width" : "25px", "float" : "right", "margin" : "10px"});
+	  } );
+  
+  </script>
+
+
+
+<link href="../resources/css/bootstrap-theme.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap-theme.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/main.css" type="text/css" rel="stylesheet">
+<link href="../resources/css/create_checklist_activity.css"
+	type="text/css" rel="stylesheet">
+<link href="../resources/css/header_and_buttons.css" type="text/css"
+	rel="stylesheet">
+
+<title>Add Checklist</title>
+</head>
+<body>
+	<div class="header">
+		<div class="container" style="width: 100%;">
+			<div class="row">
+				<div class="col-lg-3 col-sm-4 col-md-3 col-xs-4"
+					style="height: 280px; margin: 0; padding: 0;">
+					<button class="app_logo"></button>
+				</div>
+				<div class="col-lg-8 col-sm-7 col-md-8 col-xs-6"
+					style="height: 280px">
+					<div class="row" style="height: 140px;">
+						<div class="header_buttons">
+							<button id="logout" class="header_btn" id="header_logout">
+								<img alt="" src="../resources/icons/logout_icon.png"
+									width="35px;" style="transform: scaleX(-1);"> LOGOUT
+							</button>
+							<button id="chat" class="header_btn">
+								<img alt="" src="../resources/icons/groupchat_icon.png"
+									width="45px;" height="30px"> GROUP CHAT
+							</button>
+							<button id="calendar" class="header_btn">
+								<img alt="" src="../resources/icons/dashboard_calendar_icon.png"
+									width="35px;"> CALENDAR AND SCHEDULE
+							</button>
+							<button id="notification" class="header_btn">
+								<img alt="" src="../resources/icons/noti_icon.png" width="40px;">
+								NOTIFICATION
+							</button>
+							<button id="discussion" class="header_btn" id="header_discuss">
+								<img alt="" src="../resources/icons/discussion_icon.png"
+									width="45px;"> DISCUSSION
+							</button>
+							<button id="checklistpage" class="header_btn">
+								<img alt="" src="../resources/icons/checklist_icon.png"
+									width="45px;"> CHECK LIST
+							</button>
+							<button id="family_profile" class="header_btn"
+								id="header_familyprofile">
+								<img alt="" src="../resources/icons/family_profile_icon.png"
+									width="40px;"> FAMILY PROFILE
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-1 col-sm-1 col-md-1 col-xs-2"
+					style="height: 280px; padding: 0; margin: 0;">
+					<div class="profile_container">
+						<div class="profile_pic_name">
+							<button id="profile" class="profile_button">
+								<img id="profile_pic" alt=""
+									src="../resources/images/image_boy_profile.png" width="100%"
+									height="70%">
+								<div id="profile_name"
+									style="font-size: 12px; padding-top: 3px;">PROFILE</div>
+							</button>
+						</div>
+						<div class="arrowhead_border"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="background_div">
+		<div class="container">
+			<div class="row" style="text-align: center;">
+				<div class="title">ADD MEMBER</div>
+			</div>
+			<div class="row" style="padding-top: 50px;">
+				<div class="col-lg-0 col-sm-1 col-xs-2"></div>
+				<div class="col-lg-12 col-sm-10 col-xs-8">
+					<div id="white_box_create_checklist_activity">
+						<div class="titles_inputs">
+							<div class="titles">
+								<img alt="" src="../resources/icons/label_icon.png"
+									style="float: left; width: 20px; height: 20px; margin-right: 10px;">CHECKLIST
+								NAME
+							</div>
+							<div class="input_div">
+								<input class="inputs" placeholder="LABELS">
+							</div>
+						</div>
+						<div class="titles_inputs">
+							<div class="titles">
+								<img alt="" src="../resources/icons/description_icon.png"
+									style="float: left; width: 15px; height: 18px; margin-right: 10px; background-size: 100% 100%;">DESCRIPTION
+							</div>
+							<div class="input_div">
+								<input class="inputs" placeholder="DESCRIPTION">
+							</div>
+						</div>
+						<div class="titles_inputs">
+							<div class="titles">
+								<img alt="" src="../resources/icons/clock_icon.png"
+									style="float: left; width: 18px; height: 18px; margin-right: 10px; background-size: 100% 100%;"><label
+									style="float: left;"></label>DATE & TIME
+							</div>
+							<div class="input_div">
+								<input id="datepicker" class="inputs"
+									placeholder="CHOOSE DUE DATE AND TIME">
+							</div>
+						</div>
+						
+						<div class="add">
+							<div>
+								<img alt="" src="../resources/icons/user_icon.png" width="30px" style="margin-top: -6px; margin-right: 10px; float: left;">
+								MEMBERS
+								<button class="addIcon" id="addNewMember_checklist"></button>
+							</div>
+							<div style="margin-top: 15px;">
+							 	<div class="members">
+									<img alt="" src="../resources/icons/user_icon.png" width="30px" style="float: left; margin-top: 5px; margin-left: 5px;">
+									<div style="float: left; margin-left: 5px;">
+										<div style="font-size: 14px;" id="member_name">CHRISTINE</div>
+										<div style="font-size: 12px;" id="relationship">MOTHER</div>
+									</div>
+									<button class="cancel-member"></button>
+								</div>
+								<div class="members">
+									<img alt="" src="../resources/icons/user_icon.png" width="30px" style="float: left; margin-top: 5px; margin-left: 5px;">
+									<div style="float: left; margin-left: 5px;">
+										<div style="font-size: 14px;" id="member_name">JOHN</div>
+										<div style="font-size: 12px;" id="relationship">FATHER</div>
+									</div>
+									<button class="cancel-member"></button>
+								</div>
+								<div class="members">
+									<img alt="" src="../resources/icons/user_icon.png" width="30px" style="float: left; margin-top: 5px; margin-left: 5px;">
+									<div style="float: left; margin-left: 5px;">
+										<div style="font-size: 14px;" id="member_name">TOM</div>
+										<div style="font-size: 12px;" id="relationship">BROTHER</div>
+									</div>
+									<button class="cancel-member"></button>
+								</div>
+								<div class="members">
+									<img alt="" src="../resources/icons/user_icon.png" width="30px" style="float: left; margin-top: 5px; margin-left: 5px;">
+									<div style="float: left; margin-left: 5px;">
+										<div style="font-size: 14px;" id="member_name">ANGEL</div>
+										<div style="font-size: 12px;" id="relationship">SISTER</div>
+									</div>
+									<button class="cancel-member"></button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="create-checklist" >
+							CREATE CHECKLIST
+							<button class="addIcon"></button>
+						</div>
+
+						<div class="checklist_tasks">
+							<div class="checklist_task_number">
+								<div class="title_bar">
+									<input type="checkbox" id="task1_trigger">
+									<label for="task1_trigger" class="large_task"></label>									
+									<input type="text" width="auto" style="float: left; margin-top: 10px; margin-left: 5px; border: none; background-color: transparent; " placeholder="CHECKLIST TASK1">
+									<button data-toggle="collapse" data-target="#task1"
+										aria-expanded="false" class="show_more_or_less"></button>
+								</div>
+								<div id="task1" class="collapse task_body">
+									<div class="small_task">
+										<input type="checkbox" id="small_task1_trigger">
+										<label for="small_task1_trigger" class="small-task-checkbox"></label>		
+										<input type="text" width="auto" style="float: left; border-color: transparent; background-color: transparent; height: 20px; margin-top: 4px;" placeholder="TASK 1">
+										
+									</div>
+									<div class="small_task">
+										<input type="checkbox" id="small_task2_trigger">
+										<label for="small_task2_trigger" class="small-task-checkbox"></label>	
+										<input type="text" width="auto" style="float: left; border-color: transparent; background-color: transparent; height: 20px; margin-top: 4px;" placeholder="TASK 2">
+									</div>
+									<div style="height: 40px;">
+										<button class="task_add_item">ADD ITEM</button>
+									</div>
+								</div>
+							</div>
+							<div class="checklist_task_number">
+								<div class="title_bar">
+									<input type="checkbox" id="task2_trigger">
+									<label for="task2_trigger" class="large_task"></label>
+									<input type="text" width="auto" style="float: left; margin-top: 10px; margin-left: 5px; border: none; background-color: transparent; " placeholder="CHECKLIST TASK2">
+									<button data-toggle="collapse" data-target="#task2"
+										aria-expanded="false" class="show_more_or_less"></button>
+								</div>
+								<div id="task2" class="collapse task_body">
+									<div class="small_task">
+										<input type="checkbox" id="small_task2-1_trigger">
+										<label for="small_task2-1_trigger" class="small-task-checkbox"></label>	
+										<input type="text" width="auto" style="float: left; border-color: transparent; background-color: transparent; height: 20px; margin-top: 4px;" placeholder="TASK 1">
+									</div>
+									<div class="small_task">
+										<input type="checkbox" id="small_task2-2_trigger">
+										<label for="small_task2-2_trigger" class="small-task-checkbox"></label>	
+										<input type="text" width="auto" style="float: left; border-color: transparent; background-color: transparent; height: 20px; margin-top: 4px;" placeholder="TASK 2">
+									</div>
+									<div style="height: 40px;">
+										<button class="task_add_item">ADD ITEM</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="checklist_task_number">
+								<div class="title_bar">
+									<input type="checkbox" id="task3_trigger">
+									<label for="task3_trigger" class="large_task"></label>
+									<input type="text" width="auto" style="float: left; margin-top: 10px; margin-left: 5px; border: none; background-color: transparent; " placeholder="CHECKLIST TASK3">
+									<button data-toggle="collapse" aria-expanded="false"
+										data-target="#task3" class="show_more_or_less"></button>
+								</div>
+								<div id="task3" class="collapse task_body">
+									<div class="small_task">
+										<input type="checkbox" id="small_task3-1_trigger">
+										<label for="small_task3-1_trigger" class="small-task-checkbox"></label>	
+										<input type="text" width="auto" style="float: left; border-color: transparent; background-color: transparent; height: 20px; margin-top: 4px;" placeholder="TASK 1">
+									</div>
+									<div style="height: 40px;">
+										<button class="task_add_item">ADD ITEM</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comment_div">
+							<div id="user_pic"></div>
+							<!-- <div class="input_container">
+					<input type="text">
+			</div>
+				<input type="text"> -->
+							<button id="send_comment">SEND</button>
+							<div class="input_container">
+								<input type="text" class="text" placeholder="WRITE COMMENT">
+							</div>
+						</div>
+						<div class="activity_bar">
+							<div class="activity_icon"></div>
+							<div
+								style="float: left; margin-top: 11px; margin-left: 10px; border: none;">
+								ACTIVITY</div>
+							<div class="dropdown">
+								<button id="filter_button" data-toggle="dropdown" type="button"
+									aria-haspopup="true" aria-expanded="false"
+									class="dropdown-toggle"></button>
+								<ul class="dropdown-menu dropdown-menu-right"
+									aria-labelledby="filter_button">
+									<li><a href="#">SHOW ALL ACTIVITIES</a></li>
+									<li class="divider"></li>
+									<li><a href="#">SHOW ONLY COMMENTS</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="checklist_activities">
+							<div class="comments_header">
+								<div class="pic_and_name">
+									<img class="creator_pic" alt=""
+										src="../resources/icons/user_icon.png"> <label
+										class="creator_name">JOHN</label>
+								</div>
+								<div class="datetime_and_comment_header">
+									<div class="date_and_time">
+										<div class="activity_clock"></div>
+										<div id="last_activity_date" class="activity_datetime_comment">OCT
+											14 2017</div>
+										<div class="activity_datetime_comment">AT</div>
+										<div id="last_activity_time" class="activity_datetime_comment">12:05
+											PM</div>
+									</div>
+									<div class="comment_text">
+										<div class="activity_datetime_comment">THIS IS JUST
+											COMMENTS</div>
+									</div>
+								</div>
+							</div>
+							<div class="activity_items">
+								<div class="checked_icon">
+									<img alt="" src="../resources/icons/check_red_icon.png"
+										style="width: 20px; height: 20px; margin: 0px">
+								</div>
+								<div class="activity_completed_and_date">
+									<div class="completed_task">
+										<div class="creator_name">JOHN</div>
+										<div style="color: gray; margin-left: 5px; float: left;">COMPLETED</div>
+										<div style="margin-left: 5px; float: left;">TESTIN1</div>
+										<div style="color: gray; margin-left: 5px; float: left;">ON
+											THIS CARD</div>
+									</div>
+									<div class="complete_date">
+										<img alt="" src="../resources/icons/clock_icon.png"
+											style="width: 15px; height: 15px; float: left; margin-top: 2.5px; margin-left: 5px; margin-right: 5px;">
+										<div id="activity_date" class="detail_date_and_time">OCT
+											14 2017</div>
+										<div class="detail_date_and_time">AT</div>
+										<div id="activity_time" class="detail_date_and_time">12:05
+											PM</div>
+									</div>
+								</div>
+							</div>
+							<div class="activity_items">
+								<div class="checked_icon">
+									<img alt="" src="../resources/icons/check_red_icon.png"
+										style="width: 20px; height: 20px; margin: 0px">
+								</div>
+								<div class="activity_completed_and_date">
+									<div class="completed_task">
+										<div class="creator_name">JOHN</div>
+										<div style="color: gray; margin-left: 5px; float: left;">COMPLETED</div>
+										<div style="margin-left: 5px; float: left;">TESTIN2</div>
+										<div style="color: gray; margin-left: 5px; float: left;">ON
+											THIS CARD</div>
+									</div>
+									<div class="complete_date">
+										<img alt="" src="../resources/icons/clock_icon.png"
+											style="width: 15px; height: 15px; float: left; margin-top: 2.5px; margin-left: 5px; margin-right: 5px;">
+										<div id="activity_date" class="detail_date_and_time">OCT
+											14 2017</div>
+										<div class="detail_date_and_time">AT</div>
+										<div id="activity_time" class="detail_date_and_time">11:04
+											PM</div>
+									</div>
+								</div>
+							</div>
+							<div class="activity_items">
+								<div class="checked_icon">
+									<img alt="" src="../resources/icons/check_red_icon.png"
+										style="width: 20px; height: 20px; margin: 0px">
+								</div>
+								<div class="activity_completed_and_date">
+									<div class="completed_task">
+										<div class="creator_name">JOHN</div>
+										<div style="color: gray; margin-left: 5px; float: left;">COMPLETED</div>
+										<div style="margin-left: 5px; float: left;">TESTIN3</div>
+										<div style="color: gray; margin-left: 5px; float: left;">ON
+											THIS CARD</div>
+									</div>
+									<div class="complete_date">
+										<img alt="" src="../resources/icons/clock_icon.png"
+											style="width: 15px; height: 15px; float: left; margin-top: 2.5px; margin-left: 5px; margin-right: 5px;">
+										<div id="activity_date" class="detail_date_and_time">OCT
+											14 2017</div>
+										<div class="detail_date_and_time">AT</div>
+										<div id="activity_time" class="detail_date_and_time">11:00
+											PM</div>
+									</div>
+								</div>
+							</div>
+							<div class="activity_items">
+								<div class="checked_icon">
+									<img alt="" src="../resources/icons/check_red_icon.png"
+										style="width: 20px; height: 20px; margin: 0px">
+								</div>
+								<div class="activity_completed_and_date">
+									<div class="completed_task">
+										<div class="creator_name">JOHN</div>
+										<div style="color: gray; margin-left: 5px; float: left;">COMPLETED</div>
+										<div style="margin-left: 5px; float: left;">TESTIN4</div>
+										<div style="color: gray; margin-left: 5px; float: left;">ON
+											THIS CARD</div>
+									</div>
+									<div class="complete_date">
+										<img alt="" src="../resources/icons/clock_icon.png"
+											style="width: 15px; height: 15px; float: left; margin-top: 2.5px; margin-left: 5px; margin-right: 5px;">
+										<div id="activity_date" class="detail_date_and_time">OCT
+											14 2017</div>
+										<div class="detail_date_and_time">AT</div>
+										<div id="activity_time" class="detail_date_and_time">10:55
+											PM</div>
+									</div>
+								</div>
+							</div>
+							<!-- 						<div class="activity_items">
+								<div class="checked_icon">
+									<img alt="" src="../resources/icons/check_red_icon.png"
+										style="width: 20px; height: 20px; margin: 0px">
+								</div>
+								<div class="activity_completed_and_date">
+									<div class="completed_task">
+										<div class="creator_name">JOHN</div>
+										<div style="color: gray; margin-left: 5px; float: left;">COMPLETED</div>
+										<div style="margin-left: 5px; float: left;">TESTIN4</div>
+										<div style="color: gray; margin-left: 5px; float: left;">ON
+											THIS CARD</div>
+									</div>
+									<div class="complete_date">
+										<img alt="" src="../resources/icons/clock_icon.png"
+											style="width: 15px; height: 15px; float: left; margin-top: 2.5px; margin-left: 5px; margin-right: 5px;">
+										<div id="activity_date" class="detail_date_and_time">OCT
+											14 2017</div>
+										<div class="detail_date_and_time">AT</div>
+										<div id="activity_time" class="detail_date_and_time">10:55
+											PM</div>
+									</div>
+								</div>
+							</div>
+							<div class="activity_items">
+								<div class="checked_icon">
+									<img alt="" src="../resources/icons/check_red_icon.png"
+										style="width: 20px; height: 20px; margin: 0px">
+								</div>
+								<div class="activity_completed_and_date">
+									<div class="completed_task">
+										<div class="creator_name">JOHN</div>
+										<div style="color: gray; margin-left: 5px; float: left;">COMPLETED</div>
+										<div style="margin-left: 5px; float: left;">TESTIN4</div>
+										<div style="color: gray; margin-left: 5px; float: left;">ON
+											THIS CARD</div>
+									</div>
+									<div class="complete_date">
+										<img alt="" src="../resources/icons/clock_icon.png"
+											style="width: 15px; height: 15px; float: left; margin-top: 2.5px; margin-left: 5px; margin-right: 5px;">
+										<div id="activity_date" class="detail_date_and_time">OCT
+											14 2017</div>
+										<div class="detail_date_and_time">AT</div>
+										<div id="activity_time" class="detail_date_and_time">10:55
+											PM</div>
+									</div>
+								</div>
+							</div>
+							<div class="activity_items">
+								<div class="checked_icon">
+									<img alt="" src="../resources/icons/check_red_icon.png"
+										style="width: 20px; height: 20px; margin: 0px">
+								</div>
+								<div class="activity_completed_and_date">
+									<div class="completed_task">
+										<div class="creator_name">JOHN</div>
+										<div style="color: gray; margin-left: 5px; float: left;">COMPLETED</div>
+										<div style="margin-left: 5px; float: left;">TESTIN4</div>
+										<div style="color: gray; margin-left: 5px; float: left;">ON
+											THIS CARD</div>
+									</div>
+									<div class="complete_date">
+										<img alt="" src="../resources/icons/clock_icon.png"
+											style="width: 15px; height: 15px; float: left; margin-top: 2.5px; margin-left: 5px; margin-right: 5px;">
+										<div id="activity_date" class="detail_date_and_time">OCT
+											14 2017</div>
+										<div class="detail_date_and_time">AT</div>
+										<div id="activity_time" class="detail_date_and_time">10:55
+											PM</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+
+						<div class="buttons_div">
+							<button id="done_create_checklist" class="cancel_done">DONE</button>
+							<button id="cancel_create_checklist" class="cancel_done">CANCEL</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+	<script type="text/javascript" src="../resources/js/header.js"></script>
+	<script type="text/javascript">
+
+		document.getElementById("addNewMember_checklist").onclick = function() {
+			location.href="http://localhost:8080/FamilyApp/views/create_add_member_checklist.html";
+			};
+
+			document.getElementById("done_create_checklist").onclick = function() {
+				location.href = "http://localhost:8080/FamilyApp/views/checklist.html";
+			};
+
+			document.getElementById("cancel_create_checklist").onclick = function() {
+				location.href = "http://localhost:8080/FamilyApp/views/checklist.html";
+			};
+	</script>
+
+
+</body>
+</html>

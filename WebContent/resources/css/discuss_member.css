@@ -1,0 +1,650 @@
+#pagefooterwithdiscuss_memberBox{
+	background-position:right 0 bottom 0;
+	height: 1300px;
+	background-size: contain;
+	background-image: url(../images/add_member_footer_bg.png);
+	background-repeat: no-repeat;
+	
+}
+
+#white-box-discussmember{
+	top:3%;
+	background-color: white;
+	background:rgba(255,255,255, 0.8);
+    height: 850px;
+ 	box-shadow: 0px 5px 15px 5px #d0c8bc;  
+ 	background-size: 100% 100%;
+}
+
+
+
+
+
+.admindiscussionTopic{
+	width: 59%; 
+	height: 200px ;
+	top: 2%; 
+	margin: 0 auto;
+	position: relative;
+	float: left;
+	left:2%;
+	margin-bottom:2%;
+	border-style: solid;
+	border-color: #beeae0;
+}
+
+.adminTopic{
+	width: 100%; 
+	height: 50px;
+	background-color:#beeae0;
+	margin: 0 auto;
+	position: relative;
+}
+
+.adminTopicText{
+	width: 100%; 
+	height: 110px ;
+	margin: 0 auto;
+	position: relative;
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	overflow: auto;
+}
+
+.adminTopicTime{
+	width: 95%; 
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+	text-align:right;	
+	top:1%;	
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #59c6ad;
+}
+
+.discussAdminInfo{
+	width: 15%; 
+	height: 100% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.discussAdminphoto{
+	width: 90%; 
+	height: 55% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+#discussAdminphoto_image{
+	width: 30px;
+    height:30px;
+	background-image: url(../icons/user_profile_icon_4.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;	
+	border:none;
+	background-color: transparent;
+}
+
+.discussAdminRole{
+	width: 90%; 
+	height: 30% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.discussAdminName{
+	width: 90%;
+	height: 40%;
+	left: 5%;
+}
+
+.topicTitle{
+	top:20%;
+	width: 85%; 
+	height: 80% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.topicTitle:after{
+ 	content: '';
+  	position: absolute;
+	background-color: #59c6ad;	
+  	left: 9%;
+	border-top: 4px solid #59c6ad;
+ 	display: block;
+	width: 130px;
+  	transform: translateY(-50%);
+  	top: 65%;
+}
+
+
+
+
+
+
+
+.rightDIV{
+	width: 35%; 
+	height: 800px;
+	top: 2%; 
+	margin: 0 auto;
+	position: relative;
+	float: right;
+	right:2%;
+}
+
+
+
+
+.memberDIV{
+	width: 98%; 
+	max-height: 450px;
+	min-height: 270px;
+	margin: 0 auto;
+	position: relative;
+	float: right;
+	right:2%;
+}
+
+.memberTopic{
+	width: 100%; 
+	height: 40px ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.memberTopic:after{
+ 	content: '';
+  	position: absolute;
+	background-color: #59c6ad;	
+  	left: 0;
+	border-top: 4px solid #59c6ad;
+ 	display: block;
+	width: 70px;
+  	transform: translateY(-50%);
+  	top: 65%;
+}
+
+#searchpanel{
+	position:relative;
+	height:50px;
+}
+
+.groupforsearch{
+	width: 90%;
+	height: 50px;
+	position:relative;
+	float: left;
+	margin-left: 14px;
+}
+
+.searchformember{
+	width: 100%;
+	height: 20px;
+	border-radius: 3em;
+    margin: 1%;
+    padding: 1.3em;
+    padding-left: 2em;    
+    outline: none;    
+	position: absolute;
+	float: left;
+}
+
+.searchbtn{
+	width: 15px;
+	height: 15px;
+	background-color: transparent;
+	border: none;
+	background-image: url(../icons/gray_search_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	position: absolute;
+	left: 3%;
+	top: 26%;
+}
+
+.clearsearchbtn{
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: none;
+	background-image: url(../icons/gray_cancel_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	position: absolute;
+	right: 1%;
+	top: 17%;
+}
+
+
+.memberList{
+	width: 99%; 
+	max-height: 300px;
+	min-height: 100px;
+	margin: 0 auto;
+	position: relative;
+	overflow:auto;
+	margin-bottom: 5%;
+}
+
+
+.memberInfo{
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	height: 45px;
+	background-color: #beeae0;
+	margin-bottom: 0.5%;
+}
+
+.memberInfoCenter{
+	width: 85%;
+	height: 75%;
+	top: 10%; 
+	position: relative;
+	margin-left: 5%;
+}
+
+.memberphoto{
+	width: 15%;
+	height: 100%;
+}
+
+#memberphoto_image{
+	width: 35px;
+    height:35px;
+	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;	
+	background-color: #beeae0;
+}
+
+.memberRole{
+	width: 55%;
+	height: 100%;
+}
+
+.memberName{
+	width: 80%;
+	height: 50%;
+}
+
+.memberrelationName{
+	width: 80%;
+	height: 50%;
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+
+
+
+.relatedTopicDetail{
+	box-shadow: 0px 2px 5px 5px #d0c8bc; 
+	width: 90%; 
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #beeae0;
+	margin-bottom: 4%;
+}
+
+.relatedTopicTitle{
+	top:3%;
+	width: 95%; 
+	height: 25% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.relatedTopicText{
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	width: 95%; 
+	height: 52% ;
+	margin: 0 auto;
+	position: relative;
+	overflow: auto;
+}
+
+.relatedTopicAdmin{
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #59c6ad;
+	text-align:right;
+	width: 95%; 
+	height: 20% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.seeallLink{
+	width: 100%; 
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.seeall{
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	text-align: center;
+	margin-left: 43%;
+}
+
+
+
+
+
+
+.topicDIV{
+	width: 100%; 
+	height:350px;
+	margin: 0 auto;
+	position: relative;
+	top: 4%;
+	float: right;
+}
+
+.relatedTopic{
+	width: 100%; 
+	height: 40px ;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom:2%;
+}
+
+.relatedTopic:after{
+ 	content: '';
+  	position: absolute;
+	background-color: #59c6ad;	
+  	left: 0;
+	border-top: 4px solid #59c6ad;
+ 	display: block;
+	width: 115px;
+  	transform: translateY(-50%);
+  	top: 65%;
+}
+
+
+.relatedTopicList{
+	width: 99%; 
+	height: 230px;
+	margin: 0 auto;
+	position: relative;
+	overflow:auto;
+	margin-bottom: 5%;
+}
+
+.relatedTopicDetail{
+	box-shadow: 0px 2px 2px 2px #d0c8bc; 
+	width: 99%; 
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #beeae0;
+	margin-bottom:3%;
+}
+
+.relatedTopicTitle{
+	top:3%;
+	width: 95%; 
+	height: 25% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.relatedTopicText{
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	width: 95%; 
+	height: 52% ;
+	margin: 0 auto;
+	position: relative;
+	overflow: auto;
+}
+
+.relatedTopicAdmin{
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #59c6ad;
+	text-align:right;
+	width: 95%; 
+	height: 20% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.seeallLink{
+	width: 100%; 
+	height: 5% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.seeall{
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	text-align: center;
+	margin-left: 43%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.discuss{
+	width: 60%; 
+	height: 530px;
+	top: 2%; 
+	margin: 0 auto;
+	position: relative;
+	float: left;
+	left:2%;
+}
+
+.discussionMessage{
+	width: 99%; 
+	height: 90% ;
+	margin: 0 auto;
+	position: relative;
+	overflow: auto;
+}
+
+.discussMemberInfo{
+	width: 80px; 
+	top:1%;
+	margin-bottom:2px;
+	height: 108px ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.discussmemberphoto{
+	width: 90%; 
+	height: 45% ;
+	top:5%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#discussmemberphoto_image{
+	top: 3%;
+	left:5%;
+	width: 40px;
+    height:40px;	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;	
+	border:none;
+	background-color: transparent;
+}
+
+.discussmemberRole{
+	width: 90%; 
+	height: 50% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.discussmemberName{
+	width: 90%;
+	height: 40%;
+}
+
+.discussmemberrelationName{
+	width: 90%;
+	height: 40%;
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+.discussmemberwhiteBox{
+	background-color: white;
+	right:4%;
+ 	width: 80%;
+    height: 90px;
+    position: relative;
+ 	box-shadow: 0px 5px 15px 5px #d0c8bc;  
+ 	margin: 1%;
+ 	background-size: 100% 100%;
+ 	margin-bottom: 2.25%;
+}
+
+.discussmembertime{
+	width: 90%; 
+	height: 20% ;
+	top:5%;
+	left:1%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.timeicon{
+	top: 1%;
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/clock_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;	
+	border: none;
+}
+
+.timetext{
+	width: 93%; 
+	height: 100% ;
+	top:1%;
+	margin: 0 auto;
+	position: relative;
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #7f7a73;
+}
+
+.discussmemberTextMessage{
+	width: 90%; 
+	height: 65% ;
+	top:5%;
+	left:1%;
+	margin: 0 auto;
+	position: relative;
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	overflow: auto;
+}
+
+.discussionBox{
+	width: 100%; 
+	height: 10% ;
+	margin: 0 auto;
+	position: relative;
+	bottom: 0;
+}
+
+.discussionBoxInfo{
+	width: 15%; 
+	height: 100% ;
+	margin: 0 auto;
+	position: relative;
+}
+
+.discussionBoxphoto{
+	width: 80%; 
+	height: 90% ;
+	top:5%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#discussionBoxphoto_image{
+	top: 7%;
+	left:5%;
+	width: 50px;
+    height:50px;
+	background-image: url(../icons/user_circle_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;	
+	border:none;
+	background-color: transparent;
+}
+
+.discussionBoxWithButton{
+	width: 80%; 
+	height: 90% ;
+	right:5%;
+	top:5%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.textmessage{
+	float:left;
+	width: 80%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 15px 2px #d0c8bc;
+    margin-left: 2px;
+}
+
+.sendtextmessage{
+	width: 17%;
+	height: 80%;
+	background-color: #beeae0;
+	float:right;
+	position: relative;
+	top:15%;
+	margin: 0px auto;
+	border: none;
+}
+
+
+
+
+

@@ -1,0 +1,667 @@
+@media screen {
+	.container-fluid {
+		min-width: 900px;
+		min-height: 1000px;
+	}
+}
+
+
+font{
+	font-family: ChalkboardSE;  	 
+	color: #000000;
+	font-size: 16px;
+}
+
+.placeholder {
+	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #7f7a73; 
+}
+
+button {
+	background-color: #beeae0;
+	font-size: 16px;
+	color: #000000;
+	font-family: ChalkboardSE;
+	width: 100px;
+    height: 40px;     
+    border: none; 
+}
+
+
+button:focus {outline:0;}
+
+input[type=date], select {
+    width: 75%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 2px #d0c8bc;
+    margin-left: 40px;
+    
+}
+
+
+#pageHeaderSignUp{
+
+    height:280px;
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#logo{
+	top: 60%;
+    height:35%;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#pagefooterwithsignUpBox{
+	background-position:right 0 bottom 0;
+	height:1120px;	
+	background-size: contain; 
+	background-image: url(../images/forget_password_footer_bg.png);
+	background-repeat: no-repeat;
+}
+
+#white-box-signUp{
+	background-color: white;
+	background:rgba(255,255,255, 0.8);
+    height: 830px;
+ 	box-shadow: 0px 5px 15px 5px #d0c8bc;  
+ 	background-size: 100% 100%;
+}
+
+
+
+#title_barSignup{
+	height: 7%;
+	background-color: #59c6ad;
+}
+
+.title_bar_center{
+	width: 50%; 
+	height: 50%; 
+	top: 30%; 
+	margin: 0 auto;
+	position: relative; 
+	text-align: center;
+}
+
+.title_text{
+	font-size: 20px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+
+
+
+
+
+.profileInfo{
+	margin-top:0%;
+	width: 48%;
+	height: 90%;
+	float: right;
+}
+
+.profileInfo_center{
+	width: 80%; 
+	height: 98%; 
+	top: 3%; 
+	margin: 0 auto;
+	position: relative; 
+	
+}
+
+.user_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/user_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.username{
+	width: 100%;
+    height:30px;
+}
+
+.user_name{
+	width: 50px;
+    height:20px;
+    margin-top: 5px;
+}
+
+input[type=text], select {
+    width: 75%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 2px #d0c8bc;
+    margin-left: 40px;
+       
+    font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+
+input[type=email], select {
+   width: 75%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 2px #d0c8bc;
+    margin-left: 40px;
+       
+    font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+
+input[type=password], select {
+   width: 75%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 2px #d0c8bc;
+    margin-left: 40px;
+       
+    font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+.useremail_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/email_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.useremail{
+	width: 100%;
+    height:30px;
+}
+
+.useremail_name{
+	width: 50px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.userpassword_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/password_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.userpassword{
+	width: 100%;
+    height:30px;
+}
+
+.userpassword_name{
+	width: 50px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.retypepassword_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/password_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.retypepassword{
+	width: 100%;
+    height:30px;
+}
+
+.retypepassword_name{
+	width: 200px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.gendermf{
+	width: 100%;
+    height:30px;
+}
+
+.male{
+	width: 100px;
+    height:20px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+
+.female{
+	width: 100px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.male span{
+   	position:absolute;
+   	padding-left:20px;
+   	font-size: 16px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+.female span{
+  	position:absolute;
+   	padding-left:20px;
+   	font-size: 16px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+.birthday_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/birthday_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.birthday{
+	width: 100%;
+    height:30px;
+    margin-top: 7px;
+}
+
+.birthday_date{
+	width: 200px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.date_container{
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	height: 10%;
+}
+
+
+
+.open-button{
+	top: 34%;
+	margin-left: 77%;
+	height: 20px;
+  	width: 20px;
+	position: absolute;
+  	pointer-events: none;
+  	background-image: url(../icons/calendar_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;  	
+}
+
+.phoneno_icon{
+	width: 20px;
+    height:25px;
+	background-image: url(../icons/phone_no_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+.phone{
+	width: 100%;
+    height:30px;
+    margin-top: 7px;
+}
+
+.phoneno{
+	width: 200px;
+    height:20px;
+    margin-top: 5px;
+}
+
+.signupcancel{
+	margin-left:10%;
+	background-color: #beeae0;
+	font-size: 16px;
+	color: #000000;
+	font-family: ChalkboardSE;
+	width: 120px;
+    height: 38px;
+    margin-right: 3%;
+}
+
+
+
+
+
+
+
+
+
+.profilephoto{
+	width: 48%;
+	height: 380px;	
+	margin-top:0%;
+}
+
+.profilephoto:before {
+ 	content: '';
+  	position: absolute;
+	background-color: #beeae0;	
+  	left: 0;
+	border-top: 2px solid #beeae0;
+ 	display: block;
+	width: 30%;
+  	transform: translateY(-50%);
+  	margin-left: 10%;
+  	margin-top: 380px;
+}
+
+.profilephoto_center{
+	overflow:auto;
+	width: 80%; 
+	height: 90%; 
+	top: 10%; 
+	margin: 0 auto;
+	position: relative; 
+	text-align: center;
+}
+
+.profilephoto_title{
+	font-family: ChalkboardSE;  	 
+	color: #000000;
+	font-size: 14px;
+	
+}
+
+
+#profilephoto{
+	top: 10%;
+	margin: 0px auto;
+    width: 100px;
+    height:100px;
+	background-image: url(../icons/avatars_circle_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	left: 0;
+	position: relative;
+	z-index: 1;
+	
+}
+
+/* #canvas{
+	top:13%;
+	left:37%;
+	margin: 0px auto;
+    width: 100px;
+    height:100px;
+	background-image: url(../icons/avatars_circle_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	left: 0;
+	position: absolute;
+	z-index: 2; 
+} */
+
+#profilephoto_image:FOCUS {outline:0;}
+
+.upload_imagelink{
+	font-size: 10px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+.take_photobtn{
+	width:150px;
+	height:40px;
+	background-color: #beeae0;
+}
+
+.take_photo_icon{
+	width: 20px;
+    height:20px;
+	background-image: url(../icons/camera_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 10px;
+}
+
+.take_photo_text{
+	width: 100px;
+    height:20px;  
+}
+
+.skiplink{
+	font-size: 10px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+
+
+
+
+.coverphoto{
+	width: 48%;
+	height: 380px;
+}
+
+.profilephoto:after {
+ 	content: "";
+  	background-color: #beeae0;
+  	position: absolute;
+  	width: 2px;
+  	height: 650px;
+  	top: 13%;
+  	left: 50%;
+  	display: block;
+  	
+}
+
+.coverphoto_center{
+	overflow: auto;
+	width: 80%; 
+	height: 99%; 
+	top: 10%; 
+	margin: 0 auto;
+	position: relative; 
+	text-align: center;
+}
+
+.coverphoto_image{
+	top: 10px;
+	margin: 0px auto;
+    width: 80%;
+    height:150px;
+	background-color: #d0c8bc;
+	background-size: 100% 100%;
+	left: 0;
+	position: relative;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+	top:8%;
+   	font-size: 16px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	background-color: #beeae0;
+	width: 40px;
+	height:38px;
+}
+
+
+
+.btn-arrow-right {
+   position: relative;
+   padding-left:20%;
+   padding-right: 20%;
+   
+}
+
+.btn-arrow-right {
+   padding-left: 10%;
+    padding-right: 25%;
+}
+
+
+
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+   /* make two squares (before and after), looking similar to the button */
+  
+   content: "";
+   position: absolute;
+   top: 5px;
+   /* move it down because of rounded corners */
+   
+   width: 26px;
+   /* same as height */
+   
+   height: 25px;
+   /* button_outer_height / sqrt(2) */
+   
+   background: inherit;
+   /* use parent background */
+   
+   border: inherit;
+   /* use parent border */
+   
+   border-left-color: transparent;
+   /* hide left border */
+   
+   border-bottom-color: transparent;
+   /* hide bottom border */
+   
+   border-radius: 0px 4px 0px 0px;
+   /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+   
+   -webkit-border-radius: 0px 4px 0px 0px;
+   -moz-border-radius: 0px 4px 0px 0px;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after {
+   transform: rotate(45deg);
+   /* rotate right arrow squares 45 deg to point right */
+   
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+}
+
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+   transform: rotate(225deg);
+   /* rotate left arrow squares 225 deg to point left */
+   
+   -webkit-transform: rotate(225deg);
+   -moz-transform: rotate(225deg);
+   -o-transform: rotate(225deg);
+   -ms-transform: rotate(225deg);
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:before {
+   /* align the "before" square to the left */
+   
+   left: -11px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:after {
+   /* align the "after" square to the right */
+   
+   right: -13px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:before {
+   /* bring arrow pointers to front */
+   
+   z-index: 1;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:after {
+   /* hide arrow tails background */
+   
+   background-color: white;
+}
+
+.btn:HOVER {
+  background-color: #59c6ad;
+}
+
+.btn:ACTIVE {
+  background-color: #59c6ad;
+}
+
+.btn:FOCUS {
+  background-color: #59c6ad;
+  outline: 0;
+}
+
+
+

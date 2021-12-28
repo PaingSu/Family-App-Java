@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Topic</title>
+
+<link href="../resources/css/bootstrap-theme.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap-theme.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.min.css" type="text/css"
+	rel="stylesheet">
+
+<link href="../resources/css/headerwithbutton.css" type="text/css"
+	rel="stylesheet">
+
+<link href="../resources/css/common_discussion.css" type="text/css" rel="stylesheet">
+<link href="../resources/css/create_topic.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="../resources/js/common_functions.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="pageHeader">
+			<div class="col-xs-2 col-sm-2  col-md-2  col-lg-2 col-lg-offset-1"
+				id="logo"></div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="header_buttons">
+				<button class="header_btn" id="header_logout" onclick="logoutbtn()">
+					<img alt="" src="../resources/icons/logout_icon.png" width="35px;"
+						style="transform: scaleX(-1);"> LOGOUT
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/groupchat_icon.png" width="45px;"
+						height="30px"> GROUP CHAT
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/dashboard_calendar_icon.png"
+						width="35px;"> CALENDAR AND SCHEDULE
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/noti_icon.png" width="40px;">
+					NOTIFICATION
+				</button>
+				<button class="header_btn header_btndiscussion" id="header_discuss"
+					onclick="discussionbtn()">
+					<img alt="" src="../resources/icons/discussion_icon.png" width="45px;">
+					DISCUSSION
+				</button>
+				<button class="header_btn">
+					<img alt="" src="../resources/icons/checklist_icon.png" width="45px;">
+					CHECK LIST
+				</button>
+				<button class="header_btn" id="header_familyprofile">
+					<img alt="" src="../resources/icons/family_profile_icon.png" width="40px;">
+					FAMILY PROFILE
+				</button>
+			</div>
+			<div class="col-xs-1 col-sm-1  col-md-1  col-lg-1"
+				style="margin: 0; padding: 0;">
+				<div class="profile_pic_name">
+					<button class="profile_button" id="header_profile"
+						onclick="profilebtn()">
+						<img id="profile_pic" alt="" src="../resources/images/image_boy_profile.png"
+							width="100%" height="70%">
+						<div id="profile_name"
+							style="font-size: 12px; font-family: ChalkboardSE ; color: #000000; padding-top: 3px;">PROFILE</div>
+					</button>
+				</div>
+				<div class="arrowhead_border"></div>
+			</div>
+			<div class="titlelogo" ><div class="titlelogotext" style=" width: 180px; height:25px; text-align: center; margin-left: 10px; top: 20px;position: relative;font-size: 20px; font-family: ChalkboardSE; color: #000000; z-index: 3">ADD TOPIC</div></div>
+		</div>
+
+		<div class="row" id="pagefooterwithcreate_topicBox">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 "  id="white-box-createTopic" >
+				
+				<div class="createtopicInfo_center">
+					<font>TOPIC TITLE</font><br/>
+					<div class="placeholder"><input type="text" class="topic" id="topic" name="cfid" placeholder="OUR YOUNGEST SISTER'S EDUCATION"></div><br/>
+				
+					<font>DESCRIPTION</font><br/>
+					<div class="placeholder"><textarea style="resize: none" rows="5" class="textboxfordescription" placeholder="OUR SISTERS' SCHOOL OPENED IN 2008 AS A TUITION-FREE INDEPENDENT SCHOOL FOR GIRLS,IN GRADE 1 TO 5. I WANT HER TO BE GRADUATE. HOW COULD WE DO ABOUT THIS?" ></textarea></div><br/>
+					
+					<div class="addMemberPanel">
+						<font style="float: left; margin-top: 1%">ADD MEMBER</font>	
+						<div class="searchwrapper">
+							<div class="groupforsearch">
+							<div class="placeholder"><input type="text" class="searchformember" id="searchformember" placeholder="SEARCH">
+						
+								<button type="button" id="searchbtn" class="searchbtn"></button>
+								<button type="button" id="clearsearchbtn" class="clearsearchbtn" onclick="clearsearchtext()"></button>
+							</div>
+							</div>
+							<button type="button" id="addAllbtn" class="addAllbtn"></button>
+						</div>
+					</div>
+					
+					<div class="addingMember">
+						<div class="memberInfo">
+							<div class="memberInfoCenter">
+								<div class="memberphoto" style="float: left">
+									<img class="img-circle" id="memberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+								</div>
+						
+								<div class="memberRole" style="float: left">
+									<div class="memberName">
+										<font>RICHART</font>
+									</div>
+									<div class="memberrelationName">
+										BROTHER
+									</div>
+								</div>
+						
+								<div class="addnew" style="float: right;">
+									<button type="button" class="addnewmember" style="border: none"><font>ADD</font></button>
+								</div>
+							</div>					
+						</div>
+						<div class="memberInfo">
+							<div class="memberInfoCenter">
+								<div class="memberphoto" style="float: left">
+									<img class="img-circle" id="memberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_2.png);">
+								</div>
+						
+								<div class="memberRole" style="float: left">
+									<div class="memberName">
+										<font>ANGEL</font>
+									</div>
+									<div class="memberrelationName">
+										SISTER
+									</div>
+								</div>
+						
+								<div class="addnew" style="float: right;">
+									<button type="button" class="addnewmember" style="border: none"><font>ADD</font></button>
+								</div>
+							</div>					
+						</div>
+				
+						<div class="memberInfo">
+							<div class="memberInfoCenter">
+								<div class="memberphoto" style="float: left">
+									<img class="img-circle" id="memberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_1.png);">
+								</div>
+						
+								<div class="memberRole" style="float: left">
+									<div class="memberName">
+										<font>JUSTIN</font>
+									</div>
+									<div class="memberrelationName">
+										BROTHER
+									</div>
+								</div>
+						
+								<div class="addnew" style="float: right;">
+									<button type="button" class="addnewmember" style="border: none"><font>ADD</font></button>
+								</div>
+							</div>					
+						</div>
+					</div>
+					<div class="oldMemberPanel">
+						<div class="oldadminInfo">
+							<div class="oldadminInfoCenter">
+								<div class="oldadminphoto" style="float: left">
+									<img class="img-circle" id="oldadminphoto_image" style="background-image: url(../resources/icons/user_profile_icon_4.png);">
+								</div>
+						
+								<div class="oldadminRole" style="float: left">
+									<div class="oldadminName">
+										<font>JUSTIN</font>
+									</div>
+									<div class="oldadminrelationName">
+										BROTHER
+									</div>
+								</div>
+						
+								<div class="role" style="float: left;">
+									<font>ADMIN</font>
+								</div>
+							</div>					
+						</div>
+				
+				
+						<div class="oldmemberInfo">
+							<div class="oldmemberInfoCenter">
+								<div class="oldmemberphoto" style="float: left">
+									<img class="img-circle" id="oldmemberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_2.png);">
+								</div>
+						
+								<div class="oldmemberRole" style="float: left">
+									<div class="oldmemberName">
+										<font>JUSTIN</font>
+									</div>
+									<div class="oldmemberrelationName">
+										BROTHER
+									</div>
+								</div>
+						
+								<div class="cancel" style="float: left;">
+									<button type="button" class="canceloldmember"></button>
+								</div>
+							</div>					
+						</div>
+				
+						<div class="oldmemberInfo">
+							<div class="oldmemberInfoCenter">
+								<div class="oldmemberphoto" style="float: left">
+									<img class="img-circle" id="oldmemberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+								</div>
+						
+								<div class="oldmemberRole" style="float: left">
+									<div class="oldmemberName">
+										<font>JUSTIN</font>
+									</div>
+									<div class="oldmemberrelationName">
+										BROTHER
+									</div>
+								</div>
+						
+								<div class="cancel" style="float: left;">
+									<button type="button" class="canceloldmember"></button>
+								</div>
+							</div>					
+						</div>
+				
+						<div class="oldmemberInfo">
+							<div class="oldmemberInfoCenter">
+								<div class="oldmemberphoto" style="float: left">
+									<img class="img-circle" id="oldmemberphoto_image" style="background-image: url(../resources/icons/user_profile_icon_3.png);">
+								</div>
+						
+								<div class="oldmemberRole" style="float: left">
+									<div class="oldmemberName">
+										<font>JUSTIN</font>
+									</div>
+									<div class="oldmemberrelationName">
+										BROTHER
+									</div>
+								</div>
+						
+								<div class="cancel" style="float: left;">
+									<button type="button" class="canceloldmember"></button>
+								</div>
+							</div>					
+						</div>
+					</div>
+					<div class="donecancel">
+						
+						<button type="button" id="done" style="float: right; margin-top: 2%; border: none;margin-left: 10px;"><font>DONE</font></button>
+						<button type="button" id="cancel" style="float: right; margin-top: 2%; border: none"><font>CANCEL</font></button>
+					</div>
+					
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+	
+	<script>
+		function clearsearchtext(){
+			document.getElementById('searchformember').value = "";	
+		}
+	</script>
+</body>
+</html>

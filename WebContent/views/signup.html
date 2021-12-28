@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+
+<link href="../resources/css/bootstrap-theme.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap-theme.min.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/bootstrap.min.css" type="text/css"
+	rel="stylesheet">
+
+<link href="../resources/css/headerwithbutton.css" type="text/css"
+	rel="stylesheet">
+<link href="../resources/css/signup.css" type="text/css"
+	rel="stylesheet">
+
+<script type="text/javascript" src="../resources/js/common_functions.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="pageHeaderSignUp">
+			<div class="col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5"
+				id="logo"></div>
+		</div>
+		
+		<div class="row" id="pagefooterwithsignUpBox">
+			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="white-box-signUp">
+				<div class="row" id="title_barSignup">
+					<div class="title_bar_center"><div class="title_text">SIGN UP</div></div>
+				</div>
+				<div class="profileInfo">
+					<div class="profileInfo_center">
+						<form action="/">
+							<div class="username">
+								<div class="user_icon" style="float: left;"></div>
+								<div class="user_name" style="float: left;"><font>Username</font></div>
+							</div>
+							<div class="placeholder"><input type="text" id="uname" name="uname" placeholder="user"></div>
+							
+						
+							<div class="useremail">
+								<div class="useremail_icon" style="float: left;"></div>
+								<div class="useremail_name" style="float: left;"><font>Email</font></div>
+							</div>
+							<div class="placeholder"><input type="email" id="uemail" name="uemail" placeholder="Email"></div>
+							
+						
+							<div class="userpassword">
+								<div class="userpassword_icon" style="float: left;"></div>
+								<div class="userpassword_name" style="float: left;"><font>Password</font></div>
+							</div>
+							<div class="placeholder"><input type="password" id="upassword" name="upassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"></div>
+							
+						
+							<div class="retypepassword">
+								<div class="retypepassword_icon" style="float: left;"></div>
+								<div class="retypepassword_name" style="float: left;"><font>Reenter Password</font></div>
+							</div>
+							<div class="placeholder"><input type="password" id="retypepassword" name="retypepassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"></div>
+						
+						
+							<div class="gendermf">
+								<div class="male" style="float: left;">
+									<input type="radio" name="gender" value="male" checked>
+      								<span> Male </span>
+      							</div>
+								<div class="female" style="float: left;">
+									<input type="radio" name="gender" value="female" >
+      								<span> Female </span>
+								</div>
+							</div>
+							
+						
+							<div class="birthday">
+								<div class="birthday_icon" style="float: left;"></div>
+								<div class="birthday_date" style="float: left;"><font>Birthday</font></div>
+							</div>
+							<div class="date_container">
+								<div class="placeholder"><input class="start_date" type="date" id="selected_date" value="2018-05-05" ></div>
+								<button class="open-button" type="button" ></button>
+							</div>
+							
+						
+							<div class="phone">
+								<div class="phoneno_icon" style="float: left;"></div>
+								<div class="phoneno" style="float: left;"><font>Phone Number</font></div>
+							</div>
+							<div class="placeholder"><input type="text" id="phonenum" name="phonenum" placeholder="123456789"></div>
+							<br/>
+						
+							<!-- <div class="signUpbtn">
+								<a href="" class="signUp">SING UP</a>
+							</div> -->
+							<button type="button" class="signupcancel" id="signupcancel">CANCEL</button>
+							<button type="button" class="btn btn-arrow-right">SIGN UP</button>
+						
+						</form>
+					</div>
+				</div>
+				<div class="profilephoto">
+					<div class="profilephoto_center">
+						<div class="profilephoto_title">ADD PROFILE PHOTO</div>
+						<br/>
+						
+						<img class="img-circle" id="profilephoto"><br/><br/>
+						<canvas class="img-circle" id="canvas" width="100px" height="100px" style="display: none"></canvas>
+					
+						
+						<input type="file" id="fileLoaderprofilephoto" name="files"  title="Load File" style="display: none" />
+						
+						<a id="upload_imagelink" class="upload_imagelink" onclick="Openprofilephoto()">Click to upload an image from your library</a><br/><br/><br/>
+						
+						<video id="video" autoplay="autoplay" width="50px" height="70px" style="display: none"></video>
+						<!-- <button id="snap">Take photo</button> -->
+						
+					
+						<button type="button" class="take_photobtn" id="take_photo">
+							<div class="take_photo_icon" style="float: left"></div>
+							<div class="take_photo_text" style="float: right;"><font>TAKE PHOTO</font></div>
+						</button>
+						<br/><br/>
+						<a href="" id="skip" class="skiplink">skip this step</a>
+					</div>
+				</div>
+				<div class="coverphoto">
+					<div class="coverphoto_center">
+						<div class="profilephoto_title">ADD COVER PHOTO</div>
+						
+						<img class="coverphoto_image" id="coverphoto_image"><br/><br/>
+						<canvas class="img-circle" id="canvas_cover" width="100px" height="100px" style="display: none"></canvas>
+						
+						<input type="file" id="fileLoadercoverphoto" name="files"  title="Load File" style="display: none" />
+						
+						<a id="upload_imagelink" class="upload_imagelink" onclick="Opencoverphoto()">Click to upload an image from your library</a><br/><br/>
+						<video id="video_cover" autoplay="autoplay" width="50px" height="70px" style="display: none"></video>
+						
+						
+						
+						<button type="button" class="take_photobtn" id="take_photocover">
+							<div class="take_photo_icon" style="float: left"></div>
+							<div class="take_photo_text" style="float: right;"><font>TAKE PHOTO</font></div>
+						</button>
+						<br/><br/>
+						<a href="" id="skip" class="skiplink">skip this step</a>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script>
+	 function Openprofilephoto(){
+			document.getElementById('fileLoaderprofilephoto').click(function () {
+				$('document').ready(function () {
+				    $("#fileLoaderprofilephoto").change(function () {
+				        if (this.files && this.files[0]) {
+				            var reader = new FileReader();
+				            reader.onload = function (e) {
+				                $('#profilephoto').attr('src', e.target.result);
+				            }
+				            reader.readAsDataURL(this.files[0]);
+				        }
+				    });
+				    });
+	        });
+		} 
+
+		$('document').ready(function () {
+			
+		    $("#fileLoaderprofilephoto").change(function () {
+		        if (this.files && this.files[0]) {
+		            var reader = new FileReader();
+		            reader.onload = function (e) {
+		                $('#profilephoto').attr('src', e.target.result);
+		            }
+		            reader.readAsDataURL(this.files[0]);
+		        }
+		    });
+		    }); 
+
+
+		function Opencoverphoto(){
+			document.getElementById('fileLoadercoverphoto').click(function () {
+				$('document').ready(function () {
+				    $("#fileLoadercoverphoto").change(function () {
+				        if (this.files && this.files[0]) {
+				            var reader = new FileReader();
+				            reader.onload = function (e) {
+				                $('#coverphoto_image').attr('src', e.target.result);
+				            }
+				            reader.readAsDataURL(this.files[0]);
+				        }
+				    });
+				    });
+	        });
+		} 
+
+		$('document').ready(function () {
+			
+		    $("#fileLoadercoverphoto").change(function () {
+		        if (this.files && this.files[0]) {
+		            var reader = new FileReader();
+		            reader.onload = function (e) {
+		                $('#coverphoto_image').attr('src', e.target.result);
+		            }
+		            reader.readAsDataURL(this.files[0]);
+		        }
+		    });
+		    }); 
+			
+		var video= document.getElementById('video');
+		if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)
+			{	
+				navigator.mediaDevices.getUserMedia({ video: true, audio:true}).then(function(stream){
+					video.src=window.URL.createObjectURL(stream);
+					});
+			}
+		var canvas=document.getElementById('canvas');
+		var context=canvas.getContext('2d');
+
+		document.getElementById('take_photo').addEventListener('click',function(){
+			context.drawImage(video,0,0,100,100);
+			profilephoto.src = canvas.toDataURL();
+			});
+
+
+
+		var video_cover= document.getElementById('video_cover');
+		if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)
+			{	
+				navigator.mediaDevices.getUserMedia({ video: true, audio:true}).then(function(stream){
+					video.src=window.URL.createObjectURL(stream);
+					});
+			}
+		var canvas_cover=document.getElementById('canvas_cover');
+		var context_cover=canvas_cover.getContext('2d');
+
+		document.getElementById('take_photocover').addEventListener('click',function(){
+			context_cover.drawImage(video,0,0,100,100);
+			coverphoto_image.src = canvas_cover.toDataURL();
+			});
+
+	</script>
+
+</body>
+</html>

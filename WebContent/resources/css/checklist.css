@@ -1,0 +1,249 @@
+/* thiri */
+
+.col-lg-12 {
+	padding: 0;
+}
+
+@media screen {
+	.background_div {
+		min-width: 1000px;
+	}
+	
+	.header {
+		min-width: 1000px;
+	}
+	
+	html {
+		min-width: 1000px;
+	}
+}
+
+.background_div {
+	min-height: 900px;
+	width: 100%;
+	background-image: url("../images/checklist_footer_bg.png");
+	background-position: right 0 bottom 0;
+	background-size: contain;
+	background-repeat: no-repeat;	
+	position: relative;
+	background-color: transparent;
+	padding-bottom: 200px;
+	
+}
+
+#checklist {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 12px;
+	background-color: #beeae0;
+	height: 50px;
+}
+
+.checklist_title {
+	box-shadow: 0px 2px 2px 2px #d0c8bc;
+	height: 60px;
+	font-size: 16px;
+	background-color: #59c6ad;
+}
+
+.checklist_title_text {
+	width: 30%;
+	height: 10px;
+	float: left;
+	margin-left: 15px;
+  	margin: 20px;
+  	font-size: 16px;
+}
+.addIcon {
+	float: right;
+	margin: 12px;
+	margin-right: 15px;	
+	float: right center;
+	background-color: transparent;
+	border: none;
+	background-image: url("../icons/add_icon.png");
+	background-position: 2px 2px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+}
+#checklist_body {
+	min-height: 200px;
+	max-height: 300px;
+	background-color: rgba(255, 255, 255, 0.5);
+	overflow: auto;
+}
+
+.clock {
+	float: left;
+	height: 30px;
+	width: 30px;
+	background-image: url("../icons/clock_icon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 10px;
+	margin: 10px;
+}
+
+.date {
+	float: left;
+	height: 20px;
+	min-width: 50px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;	
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* moth and date background : #ff6377 or #00dbaa */
+
+.todo_text {
+	float: left;
+	height: 20px;
+	max-width: 40%;
+	background-color: transparent;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;	
+	text-align: left;
+	vertical-align: middle;
+}
+
+.delete {
+	float: right;
+	vertical-align: middle;
+	width: inherit;
+	height: 30px;
+	background-color: transparent;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	text-align: center;
+	border-color: transparent;
+}
+
+.delete_icon {
+	float: left;
+	background-image: url("../icons/delete-button.png");
+	background-position: center;
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-repeat: no-repeat;
+	background-size: 250% 250%;
+}
+
+.edit {
+	float: right;
+	vertical-align: middle;
+	width: 70px;
+	height: 30px;
+	background-color: transparent;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+	border-color: transparent;
+}
+
+.edit_icon {
+	float: left;
+	background-image: url("../icons/pencil-edit-button.png");
+	background-position: center;
+	width: 15px;
+	height: 15px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.done {
+	float: right;
+	vertical-align: middle;
+	width: 50px;
+	height: 30px;
+	background-color: transparent;
+	margin-bottom: 12px;
+	margin-top: 12px;
+	text-align: center;	
+}
+
+.unchecked {
+	float: left;
+	background-image: url("../icons/no_check_icon.png");
+	background-position: center;
+	width: 17px;
+	height: 17px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.checked {
+	float: left;
+	background-image: url("../icons/done_icon.png");
+	background-position: center;
+	width: 17px;
+	height: 15px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+	margin-left: 2px;
+	background-color: transparent;
+}
+
+.comment_count {
+	float: right;
+	text-align: center;
+	width: 10px;
+	height: 13px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	margin-left: 5px;
+	margin-right: 20px;	
+}
+
+.comment {
+	float: right;
+	background-image: url("../icons/comment_icon.png");
+	background-position: center;
+	width: 17px;
+	height: 17px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+
+/* 30_activity_with_box */
+.setting_box {
+	font-size: 16px;
+	color: #000000;
+	opacity: rgba(0,0,0,0.3)#000000 Opacity 40%;
+}
+
+
+/* white boxes for checklist pages  */
+
+#white_box_checklist {
+	background-color: rgba(255,255,255,0.8);
+	/* position: absolute; */
+	/* left: 15%;
+	right: 15%; */
+	margin: 0 auto;
+	width: 100%;
+	min-height: 300px;
+	max-height: 410px;
+	box-shadow: 0px 5px 15px 5px #d0c8bc;
+	background-size: 100% 100%;	
+}

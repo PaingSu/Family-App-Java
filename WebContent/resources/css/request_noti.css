@@ -1,0 +1,291 @@
+@media screen {
+	.container-fluid {
+		min-width: 1000px;
+		min-height: 1000px;
+	}
+}
+
+::placeholder {
+   	font-size: 12px;
+	font-family: ChalkboardSE;
+	color: #000000; 
+}
+
+button {
+	background-color: #beeae0;
+	font-size: 16px;
+	color: #000000;
+	font-family: ChalkboardSE;
+	width: 100px;
+    height: 40px;
+    border: none;      
+}
+
+
+
+
+#pagefooterwithrequest_familyBox{
+	background-position:right 0 bottom 0;
+	height:1000px;
+	background-size: contain;
+	background-image: url(../images/family_member_footer_bg.png);
+	background-repeat: no-repeat;
+}
+
+
+#requestfamilyInfo{
+	top:4%;
+	background-color: white;
+	background:rgba(255,255,255, 0.8);
+	max-height: 705px;
+    min-height: 390px;
+ 	box-shadow: 0px 5px 15px 5px #d0c8bc;  
+ 	background-size: 100% 100%;
+ 	z-index: 1;
+}
+
+.requestfamilyInfo_center{
+	width: 100%; 
+	max-height: 703px; 
+	min-height: 375px;
+	top:2%; 
+	margin: 0 auto;
+	position: relative;
+	background-color: #beeae0;
+}
+
+
+
+.requestNotiPanel{
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	max-height: 700px;
+	min-height: 325px;
+	overflow: auto;
+	background:rgba(127,122,115, 0.5);
+}
+
+.viewmore{
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	height: 50px;
+}
+
+.textcenter{
+	top: 14px;
+	position: relative;
+	width: 30%;
+	margin: 0px auto;
+	height: 30px;
+	overflow: auto;
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	text-align: center;
+}
+
+.requestNotiInfo{
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	height:62px;
+	background-color: #beeae0;
+	margin-bottom: 0.3%;
+}
+
+.requestNotiInfoCenter{
+	width: 95%;
+	height: 75%;
+	top: 10%; 
+	position: relative;
+	margin-left: 2%;
+}
+
+.requestpersonphoto{
+	width: 10%;
+	height: 100%;
+	margin-top: 0.5%;
+}
+
+#requestpersonphoto_image{
+	width: 35px;
+    height:35px;
+	border: none;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;	
+}
+
+.requestwithtime{
+	width: 65%;
+	height: 100%;
+}
+
+.requesttext{
+	width: 100%;
+	height: 50%;
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;
+}
+
+.requesttime{
+	width: 80%;
+	height: 50%;
+	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #7f7a73;
+}
+
+.Cancel{
+	width: 25%;
+	height: 30px;
+	margin-top: 0.5%;
+	position: relative;
+}
+
+.acceptrequest{
+	width: 30px;
+    height:30px;
+	background-image: url(../icons/accept_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;	
+	float: right;
+	background-color: transparent;
+	border: none;
+}
+
+.cancelrequest{
+	width: 30px;
+    height:30px;
+	background-image: url(../icons/cancel_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;	
+	float: right;
+	background-color: transparent;
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+.menubtnrequestfamily{
+	margin-top:1%;
+   	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	background-color: #59c6ad;
+	width: 150px;
+	height: 60px;
+}
+
+.menubtnrequestfamily:HOVER {
+  background-color: #59c6ad;
+}
+
+.menubtnrequestfamily:ACTIVE {
+  background-color: #59c6ad;
+}
+
+.menubtnrequestfamily:FOCUS {
+  background-color: #59c6ad;
+  outline: 0;
+}
+
+.menubtnrequestfamily::SELECTION{
+	background-color: #59c6ad;
+}
+
+
+
+
+.menubtnrequestfamily:BEFORE{
+
+  content: "";
+  position: absolute;
+  top: 90%; 
+  background: #59c6ad;
+  width: 40px;
+  height: 40px;
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+  
+
+}
+
+
+
+.menubtnrequestfamily:BEFORE{
+	left: 530px;
+}
+
+.menubtnrequestfamily:BEFORE{
+	z-index: 1;
+}
+
+
+
+#tabMenu{
+    height:80px;
+ 	background-size: 100% 100%;
+ 	z-index: 2;
+ 	top:5%;
+}
+
+
+#tabMenu:AFTER {
+ 	content: '';
+  	position: absolute;
+	background-color: #beeae0;	
+  	left: 0;
+	border-top: 10px solid #59c6ad; 
+ 	display: block;
+	width: 100%;
+  	transform: translateY(-50%);
+  	margin-left: 0;
+  	margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menubtn{
+	margin-top:1%;
+   	font-size: 14px;
+	font-family: ChalkboardSE;
+	color: #000000;
+	background-color: white;
+	width: 150px;
+	height: 60px;
+}
+
+.menubtn:HOVER {
+  background-color: #59c6ad;
+}
+
+.menubtn:ACTIVE {
+  background-color: #59c6ad;
+}
+
+.menubtn:FOCUS {
+  background-color: #59c6ad;
+  outline: 0;
+}
+
+.menubtn::SELECTION{
+	background-color: #59c6ad;
+}
